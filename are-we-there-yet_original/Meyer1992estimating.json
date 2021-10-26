@@ -1,0 +1,39 @@
+{
+  "Title": "Estimating Correlations from Scatterplots",
+  "Category": "Experiment",
+  "Authors": "Joachim Meyer, David Shinar",
+  "Link": "https://journals.sagepub.com/doi/abs/10.1177/001872089203400307",
+  "Covered Designs": {
+    "CE-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative-1",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "quantitative-2",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["correlate"],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

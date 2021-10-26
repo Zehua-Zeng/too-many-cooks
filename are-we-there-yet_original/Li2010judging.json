@@ -1,0 +1,41 @@
+{
+  "Title": "Judging correlation from scatterplots and parallel coordinate plots",
+  "Category": "Experiment",
+  "Authors": "Jing Li, Jean-Bernard Martens, Jarke J. van Wijk",
+  "Link": "https://dl.acm.org/doi/10.1057/ivs.2008.13",
+  "Covered Designs": {
+    "CE-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative-1",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "quantitative-2",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {
+    "OE-1": "parallel coordinates"
+  },
+  "Tasks": ["correlate"],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

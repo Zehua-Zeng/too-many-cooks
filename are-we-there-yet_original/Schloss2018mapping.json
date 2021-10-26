@@ -1,0 +1,47 @@
+{
+  "Title": "Mapping Color to Meaning in Colormap Data Visualizations",
+  "Category": "Experiment",
+  "Authors": "Karen B. Schloss, Connor C. Gramazio, Allison T. Silverman, Madeline L. Parker, Audrey S. Wang",
+  "Link": "https://ieeexplore.ieee.org/document/8454346",
+  "Covered Designs": {
+    "CE-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "nominal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            },
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-saturation"]
+            }
+          ],
+          "marks": ["area-rect"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["compare-derived-values"],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

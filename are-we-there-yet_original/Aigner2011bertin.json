@@ -1,0 +1,146 @@
+{
+  "Title": "Bertin was Right: An Empirical Evaluation of Indexing to Compare Multivariate Time-Series Data Using Line Plots",
+  "Authors": "Wolfgang Aigner, Chad Kainz, Ricky K. K. Ma, Silvia Miksch",
+  "Link": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2010.01845.x",
+  "Category": "Experiment",
+  "Covered Designs": {
+    "CE-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            },
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            }
+          ],
+          "marks": ["line"]
+        }
+      ],
+      "note": "juxtaposed line plot with linear scale"
+    },
+    "CE-2": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            },
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            }
+          ],
+          "marks": ["line"]
+        }
+      ],
+      "note": "superimposed line plot with log scale"
+    },
+    "CE-3": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            },
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            }
+          ],
+          "marks": ["line"]
+        }
+      ],
+      "note": "indexing"
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["find-extremum", "estimate-trend", "compare-derived-values"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "estimate-trend-1": {
+          "rank": ["CE-2", "CE-1"],
+          "significance": []
+        },
+        "estimate-trend-2": {
+          "rank": ["CE-3", "CE-2"],
+          "significance": [["CE-3", "CE-2"]]
+        },
+        "compare-derived-values": {
+          "rank": ["CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"]
+          ]
+        },
+        "overall-1": {
+          "rank": ["CE-2", "CE-1"],
+          "significance": []
+        },
+        "overall-2": {
+          "rank": ["CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"]
+          ]
+        }
+      },
+      "time": {
+        "estimate-trend-1": {
+          "rank": ["CE-2", "CE-1"],
+          "significance": [["CE-2", "CE-1"]]
+        },
+        "estimate-trend-2": {
+          "rank": ["CE-3", "CE-2"],
+          "significance": [["CE-3", "CE-2"]]
+        },
+        "compare-derived-values": {
+          "rank": ["CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-2", "CE-1"]
+          ]
+        },
+        "overall-1": {
+          "rank": ["CE-2", "CE-1"],
+          "significance": [["CE-2", "CE-1"]]
+        },
+        "overall-2": {
+          "rank": ["CE-2", "CE-3", "CE-1"],
+          "significance": []
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

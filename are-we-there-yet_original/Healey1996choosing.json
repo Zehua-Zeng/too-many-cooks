@@ -1,0 +1,31 @@
+{
+  "Title": "Choosing Effective Colours for Data Visualization",
+  "Category": "Experiment",
+  "Authors": "Christopher G. Healey",
+  "Link": "https://ieeexplore.ieee.org/abstract/document/568118",
+  "Covered Designs": {
+    "CE-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "nominal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-hue", "color-saturation"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["detect-presence"],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

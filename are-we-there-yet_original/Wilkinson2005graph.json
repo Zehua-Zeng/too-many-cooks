@@ -1,0 +1,39 @@
+{
+  "Title": "Graph-Theoretic Scagnostics",
+  "Category": "Theory",
+  "Authors": "Leland Wilkinson, Anushka Anand, Robert Grossman",
+  "Link": "https://ieeexplore.ieee.org/document/1532142",
+  "Covered Designs": {
+    "CT-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative-1",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "quantitative-2",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": [],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

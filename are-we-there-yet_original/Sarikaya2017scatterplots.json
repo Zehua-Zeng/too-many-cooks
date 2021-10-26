@@ -1,0 +1,84 @@
+{
+  "Title": "Scatterplots: Tasks, Data, and Designs",
+  "Category": "Theory",
+  "Authors": "Alper Sarikaya, Michael Gleicher",
+  "Link": "https://ieeexplore.ieee.org/document/8017602",
+  "Covered Designs": {
+    "CT-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative-1",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "quantitative-2",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    },
+    "CT-2": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative-1",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionX"]
+            },
+            {
+              "attribute-type": "quantitative-2",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["positionY"]
+            },
+            {
+              "attribute-type": "nominal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-hue"]
+            }
+          ],
+          "marks": ["point"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": [
+    "recognize",
+    "locate",
+    "explore-adjacency",
+    "compare-objects",
+    "retrieve-value",
+    "characterize-distribution",
+    "find-anomalies",
+    "correlate",
+    "cluster",
+    "compute-derived-value",
+    "compare-derived-values"
+  ],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}

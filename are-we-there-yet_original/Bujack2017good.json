@@ -1,0 +1,116 @@
+{
+  "Title": "The Good, the Bad, and the Ugly: A Theoretical Framework for the Assessment of Continuous Colormaps",
+  "Authors": "Roxana Bujack, Terece L. Turton, Francesca Samsel, Colin Ware, David H. Rogers, James Ahrens",
+  "Link": "https://ieeexplore.ieee.org/document/8017653",
+  "Category": "Theory",
+  "Covered Designs": {
+    "CT-1": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-hue"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    },
+    "CT-2": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "nominal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-hue"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    },
+    "CT-3": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-hue"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    },
+    "CT-4": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "quantitative",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-saturation"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    },
+    "CT-5": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "nominal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-saturation"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    },
+    "CT-6": {
+      "layers": [
+        {
+          "encodings": [
+            {
+              "attribute-type": "ordinal",
+              "aggregation": {
+                "aggregation-type": "none",
+                "aggregation-window": "none"
+              },
+              "channels": ["color-saturation"]
+            }
+          ],
+          "marks": ["point", "line", "area-circle", "area-rect", "area-other"]
+        }
+      ]
+    }
+  },
+  "Other Designs": {},
+  "Tasks": [],
+  "Results": {
+    "Experiment": {},
+    "Theory": {}
+  }
+}
