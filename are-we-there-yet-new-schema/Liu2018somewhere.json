@@ -1,0 +1,308 @@
+{
+  "Title": "Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps",
+  "Category": "Experiment",
+  "Authors": "Yang Liu, Jeffrey Heer",
+  "Link": "https://dl.acm.org/doi/10.1145/3173574.3174172",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "greys"
+            }
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "blues"
+            }
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "greens"
+            }
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "oranges"
+            }
+          }
+        }
+      }
+    },
+    "CE-5": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "viridis"
+            }
+          }
+        }
+      }
+    },
+    "CE-6": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "magma"
+            }
+          }
+        }
+      }
+    },
+    "CE-7": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "plasma"
+            }
+          }
+        }
+      }
+    },
+    "CE-8": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "blueorange"
+            }
+          }
+        }
+      }
+    },
+    "CE-9": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "turbos"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["retrieve-value"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "retrieve-value-1": {
+          "rank": ["CE-5", ["CE-2", "CE-8"], "CE-9"],
+          "significance": [
+            ["CE-5", "CE-2"],
+            ["CE-5", "CE-8"],
+            ["CE-5", "CE-9"]
+          ],
+          "pvalue": 0.05
+        },
+        "retrieve-value-2": {
+          "rank": ["CE-2", "CE-3", "CE-4", "CE-1"],
+          "significance": [],
+          "pvalue": 0.05
+        },
+        "retrieve-value-3": {
+          "rank": ["CE-5", "CE-7", "CE-6"],
+          "significance": [],
+          "pvalue": 0.05
+        }
+      },
+      "time": {
+        "retrieve-value-1": {
+          "rank": ["CE-2", "CE-5", "CE-8", "CE-9"],
+          "significance": [
+            ["CE-2", "CE-8"],
+            ["CE-2", "CE-9"]
+          ],
+          "pvalue": 0.05
+        },
+        "retrieve-value-2": {
+          "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],
+          "significance": [],
+          "pvalue": 0.05
+        },
+        "retrieve-value-3": {
+          "rank": [["CE-5", "CE-6", "CE-7"]],
+          "significance": [],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theory": {}
+  }
+}
