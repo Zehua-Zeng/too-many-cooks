@@ -3,7 +3,7 @@
   "Category": "Experiment",
   "Authors": "Jeffrey Heer, Michael Bostock",
   "Link": "https://dl.acm.org/doi/10.1145/1753326.1753357",
-  "Comment": "Vegalite cannot really distinguish CE-1 to CE-5",
+  "Comment": "Vegalite cannot distinguish CE-1 to CE-5",
   "Covered Designs": {
     "CE-1": {
       "fields": [

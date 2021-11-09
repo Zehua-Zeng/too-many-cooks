@@ -250,7 +250,7 @@
             "type": "quantitative",
             "scale": {
               "zero": true,
-              "scheme": "turbos"
+              "scheme": "turbo"
             }
           }
         }
@@ -273,13 +273,11 @@
         },
         "retrieve-value-2": {
           "rank": ["CE-2", "CE-3", "CE-4", "CE-1"],
-          "significance": [],
-          "pvalue": 0.05
+          "significance": []
         },
         "retrieve-value-3": {
           "rank": ["CE-5", "CE-7", "CE-6"],
-          "significance": [],
-          "pvalue": 0.05
+          "significance": []
         }
       },
       "time": {
@@ -293,13 +291,11 @@
         },
         "retrieve-value-2": {
           "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],
-          "significance": [],
-          "pvalue": 0.05
+          "significance": []
         },
         "retrieve-value-3": {
           "rank": [["CE-5", "CE-6", "CE-7"]],
-          "significance": [],
-          "pvalue": 0.05
+          "significance": []
         }
       }
     },

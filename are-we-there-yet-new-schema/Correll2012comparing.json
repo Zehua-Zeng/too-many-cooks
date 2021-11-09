@@ -1,0 +1,143 @@
+{
+  "Title": "Comparing Averages in Time Series Data",
+  "Category": "Experiment",
+  "Authors": "Michael Correll, Danielle Albers, Steven Franconeri, Michael Gleicher",
+  "Link": "https://dl.acm.org/doi/10.1145/2207676.2208556",
+  "Comment": "Vegalite cannot distinguish (CE-1, CE-2)",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "tick",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "spectral"
+            }
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "spectral"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["compare-derived-values"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "compare-derived-values": {
+          "rank": ["CE-4", "CE-3", ["CE-1", "CE-2"]],
+          "significance": [
+            ["CE-4", "CE-3"],
+            ["CE-4", "CE-1"],
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"]
+          ],
+          "pvalue": 0.001
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

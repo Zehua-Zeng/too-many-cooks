@@ -1,0 +1,604 @@
+{
+  "Title": "Perception of Average Value in Multiclass Scatterplots",
+  "Category": "Experiment",
+  "Authors": "Michael Gleicher, Michael Correll, Christine Nothelfer, Steven Franconeri",
+  "Link": "https://ieeexplore.ieee.org/document/6634120",
+  "Comment": "Vegalite cannot distinguish (CE-1, CE-4), (CE-5, CE-6, CE-8, CE-11)",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "cicle",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "triangle-up",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 75
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "cicle",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "cicle",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-5": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-6": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-7": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "layer": [
+          {
+            "mark": {
+              "type": "point",
+              "shape": "triangle-up",
+              "filled": true
+            },
+            "encoding": {
+              "x": {
+                "field": "q1",
+                "type": "quantitative",
+                "scale": {
+                  "zero": true
+                }
+              },
+              "y": {
+                "field": "q2",
+                "type": "quantitative",
+                "scale": {
+                  "zero": true
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": {
+              "type": "point",
+              "shape": "triangle-down",
+              "filled": true
+            },
+            "encoding": {
+              "x": {
+                "field": "q1",
+                "type": "quantitative",
+                "scale": {
+                  "zero": true
+                }
+              },
+              "y": {
+                "field": "q2",
+                "type": "quantitative",
+                "scale": {
+                  "zero": true
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "CE-8": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-9": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "cicle",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal",
+            "scale": {
+              "range": ["#C0C0C0", "#000000"]
+            }
+          }
+        }
+      }
+    },
+    "CE-10": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-11": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "cardinality": 50
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["compare-derived-values"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "compare-derived-values-1": {
+          "rank": [
+            [
+              "CE-1",
+              "CE-2",
+              "CE-3",
+              "CE-4",
+              "CE-5",
+              "CE-6",
+              "CE-7",
+              "CE-8",
+              "CE-9"
+            ],
+            ["CE-10", "CE-11"]
+          ],
+          "significance": [
+            ["CE-1", "CE-10"],
+            ["CE-1", "CE-11"],
+            ["CE-2", "CE-10"],
+            ["CE-2", "CE-11"],
+            ["CE-3", "CE-10"],
+            ["CE-3", "CE-11"],
+            ["CE-4", "CE-10"],
+            ["CE-4", "CE-11"],
+            ["CE-5", "CE-10"],
+            ["CE-5", "CE-11"],
+            ["CE-6", "CE-10"],
+            ["CE-6", "CE-11"],
+            ["CE-7", "CE-10"],
+            ["CE-7", "CE-11"],
+            ["CE-8", "CE-10"],
+            ["CE-8", "CE-11"],
+            ["CE-9", "CE-10"],
+            ["CE-9", "CE-11"]
+          ],
+          "pvalue": 0.05
+        },
+        "compare-derived-values-2": {
+          "rank": ["CE-1", "CE-8"],
+          "significance": [["CE-1", "CE-8"]],
+          "pvalue": 0.03
+        },
+        "compare-derived-values-3": {
+          "rank": ["CE-6", "CE-1"],
+          "significance": [["CE-6", "CE-1"]],
+          "pvalue": 0.07
+        },
+        "compare-derived-values-4": {
+          "rank": ["CE-10", "CE-11"],
+          "significance": [["CE-10", "CE-11"]],
+          "pvalue": 0.07
+        },
+        "compare-derived-values-5": {
+          "rank": ["CE-3", "CE-1"],
+          "significance": [["CE-3", "CE-1"]],
+          "pvalue": 0.09
+        },
+        "compare-derived-values-6": {
+          "rank": ["CE-4", "CE-8"],
+          "significance": [["CE-4", "CE-8"]],
+          "pvalue": 0.39
+        },
+        "compare-derived-values-7": {
+          "rank": ["CE-1", "CE-4"],
+          "significance": [["CE-1", "CE-4"]],
+          "pvalue": 0.46
+        },
+        "compare-derived-values-8": {
+          "rank": ["CE-1", "CE-5"],
+          "significance": [["CE-1", "CE-5"]],
+          "pvalue": 0.55
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

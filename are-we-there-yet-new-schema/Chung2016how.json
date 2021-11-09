@@ -1,0 +1,295 @@
+{
+  "Title": "How Ordered Is It? On the Perceptual Orderability of Visual Channels",
+  "Category": "Experiment",
+  "Authors": "David H. S. Chung, Daniel Archambault, Rita Borgo, Darren J. Edwards, Robert S. Laramee, Min Chen",
+  "Link": "https://dl.acm.org/doi/10.5555/3071534.3071550",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "spectral"
+            }
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "fill": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-5": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": {
+          "type": "point",
+          "shape": "arrow",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "angle": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "domain": [0, 360]
+            }
+          }
+        }
+      }
+    },
+    "CE-6": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    },
+    "CE-7": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "text",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "text": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["estimate-trend", "find-extremum"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "estimate-trend": {
+          "rank": ["CE-1", "CE-4", "CE-6", "CE-2", "CE-5", "CE-3", "CE-7"],
+          "significance": [
+            ["CE-1", "CE-2"],
+            ["CE-1", "CE-3"],
+            ["CE-1", "CE-5"],
+            ["CE-1", "CE-7"],
+            ["CE-4", "CE-2"],
+            ["CE-4", "CE-3"],
+            ["CE-4", "CE-5"],
+            ["CE-4", "CE-7"],
+            ["CE-6", "CE-3"],
+            ["CE-6", "CE-7"],
+            ["CE-2", "CE-7"],
+            ["CE-5", "CE-7"]
+          ],
+          "pvalue": 0.05
+        },
+        "find-extremum": {
+          "rank": ["CE-7", "CE-2", "CE-6", "CE-4", "CE-1", "CE-5", "CE-3"],
+          "significance": [
+            ["CE-7", "CE-6"],
+            ["CE-7", "CE-4"],
+            ["CE-7", "CE-1"],
+            ["CE-7", "CE-5"],
+            ["CE-7", "CE-3"],
+            ["CE-2", "CE-6"],
+            ["CE-2", "CE-4"],
+            ["CE-2", "CE-1"],
+            ["CE-2", "CE-5"],
+            ["CE-2", "CE-3"],
+            ["CE-6", "CE-5"],
+            ["CE-6", "CE-3"],
+            ["CE-4", "CE-5"],
+            ["CE-4", "CE-3"],
+            ["CE-1", "CE-5"],
+            ["CE-1", "CE-3"]
+          ],
+          "pvalue": 0.05
+        }
+      },
+      "time": {
+        "estimate-trend": {
+          "rank": ["CE-2", "CE-5", "CE-1", "CE-4", "CE-3", "CE-6", "CE-7"],
+          "significance": [
+            ["CE-2", "CE-4"],
+            ["CE-2", "CE-3"],
+            ["CE-2", "CE-6"],
+            ["CE-2", "CE-7"],
+            ["CE-5", "CE-4"],
+            ["CE-5", "CE-6"],
+            ["CE-5", "CE-7"],
+            ["CE-1", "CE-4"],
+            ["CE-1", "CE-6"],
+            ["CE-1", "CE-7"],
+            ["CE-4", "CE-6"],
+            ["CE-4", "CE-7"],
+            ["CE-3", "CE-6"],
+            ["CE-3", "CE-7"]
+          ],
+          "pvalue": 0.05
+        },
+        "find-extremum": {
+          "rank": ["CE-1", "CE-5", "CE-4", "CE-3", "CE-2", "CE-6", "CE-7"],
+          "significance": [
+            ["CE-1", "CE-6"],
+            ["CE-1", "CE-7"],
+            ["CE-5", "CE-6"],
+            ["CE-5", "CE-7"],
+            ["CE-4", "CE-6"],
+            ["CE-4", "CE-7"],
+            ["CE-3", "CE-6"],
+            ["CE-3", "CE-7"],
+            ["CE-2", "CE-6"],
+            ["CE-2", "CE-7"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theory": {}
+  }
+}
