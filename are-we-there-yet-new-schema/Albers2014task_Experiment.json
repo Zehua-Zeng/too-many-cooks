@@ -218,7 +218,8 @@
               "x": {
                 "field": "t",
                 "type": "temporal",
-                "timeUnit": "yearmonth"
+                "timeUnit": "yearmonth",
+                "axis": null
               },
               "color": {
                 "field": "q",
@@ -234,7 +235,8 @@
               "x": {
                 "field": "t",
                 "type": "temporal",
-                "timeUnit": "yearmonth"
+                "timeUnit": "yearmonth",
+                "axis": null
               },
               "color": {
                 "field": "q",
@@ -260,7 +262,12 @@
               }
             }
           }
-        ]
+        ],
+        "config": {
+          "concat": {
+            "spacing": 0
+          }
+        }
       }
     },
     "CE-7": {

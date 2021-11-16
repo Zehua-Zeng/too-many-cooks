@@ -1,0 +1,294 @@
+{
+  "Title": "A Multi-task Comparative Study on Scatter Plots and Parallel Coordinates Plots",
+  "Category": "Experiment",
+  "Authors": "Rassadarie Kanjanabose, Alfie Abdul-Rahman, Min Chen",
+  "Link": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.12638",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": { "field": "q2", "type": "quantitative" },
+              "y": { "field": "q1", "type": "quantitative" },
+              "shape": { "field": "o", "type": "ordinal" },
+              "color": { "field": "o", "type": "nominal" }
+            }
+          },
+
+          {
+            "mark": "point",
+            "encoding": {
+              "x": { "field": "q3", "type": "quantitative" },
+              "y": { "field": "q1", "type": "quantitative" },
+              "shape": { "field": "o", "type": "ordinal" },
+              "color": { "field": "o", "type": "nominal" }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": { "field": "q4", "type": "quantitative" },
+              "y": { "field": "q1", "type": "quantitative" },
+              "shape": { "field": "o", "type": "ordinal" },
+              "color": { "field": "o", "type": "nominal" }
+            }
+          }
+        ]
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "transform": [
+          {
+            "window": [{ "op": "row_number", "as": "row_number" }]
+          }
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": { "field": "o", "type": "ordinal" },
+              "y": { "field": "row_number", "type": "ordinal", "axis": null }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": { "field": "q1", "type": "nominal" },
+              "y": { "field": "row_number", "type": "ordinal", "axis": null }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": { "field": "q2", "type": "nominal" },
+              "y": { "field": "row_number", "type": "ordinal", "axis": null }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": { "field": "q3", "type": "nominal" },
+              "y": { "field": "row_number", "type": "ordinal", "axis": null }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": { "field": "q4", "type": "nominal" },
+              "y": { "field": "row_number", "type": "ordinal", "axis": null }
+            }
+          }
+        ]
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "transform": [
+          { "window": [{ "op": "count", "as": "index" }] },
+          {
+            "fold": ["q1", "q2", "q3", "q4"]
+          },
+          {
+            "joinaggregate": [
+              { "op": "min", "field": "value", "as": "min" },
+              { "op": "max", "field": "value", "as": "max" }
+            ],
+            "groupby": ["key"]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": { "type": "rule", "color": "#ccc" },
+            "encoding": {
+              "detail": { "aggregate": "count" },
+              "x": { "field": "key" }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": { "type": "nominal", "field": "o" },
+              "detail": { "type": "nominal", "field": "index" },
+              "opacity": { "value": 0.3 },
+              "x": { "type": "nominal", "field": "key" },
+              "y": {
+                "type": "quantitative",
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Tasks": ["retrieve-value", "cluster", "find-anomalies", "estimate-trend"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "retrieve-value": {
+          "rank": [["CE-1", "CE-2", "CE-3"]],
+          "significance": []
+        },
+        "cluster": {
+          "rank": ["CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"],
+            ["CE-1", "CE-2"]
+          ],
+          "pvalue": 0.001
+        },
+        "find-anomalies": {
+          "rank": ["CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"],
+            ["CE-1", "CE-2"]
+          ]
+        },
+        "estimate-trend": {
+          "rank": ["CE-3", ["CE-1", "CE-2"]],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"]
+          ],
+          "pvalue": 0.001
+        }
+      },
+      "time": {
+        "retrieve-value": {
+          "rank": ["CE-2", "CE-3", "CE-1"],
+          "significance": [
+            ["CE-2", "CE-3"],
+            ["CE-2", "CE-1"],
+            ["CE-3", "CE-1"]
+          ],
+          "pvalue": 0.001
+        },
+        "cluster": {
+          "rank": [["CE-1", "CE-3"], "CE-2"],
+          "significance": [
+            ["CE-1", "CE-2"],
+            ["CE-3", "CE-2"]
+          ],
+          "pvalue": 0.001
+        },
+        "find-anomalies": {
+          "rank": [["CE-3", "CE-1"], "CE-2"],
+          "significance": [
+            ["CE-1", "CE-2"],
+            ["CE-3", "CE-2"]
+          ],
+          "pvalue": 0.001
+        },
+        "estimate-trend": {
+          "rank": ["CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-3", "CE-1"],
+            ["CE-3", "CE-2"],
+            ["CE-1", "CE-2"]
+          ],
+          "pvalue": 0.001
+        }
+      }
+    },
+    "Theory": {}
+  }
+}
