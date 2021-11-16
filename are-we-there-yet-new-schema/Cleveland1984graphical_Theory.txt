@@ -1,0 +1,5 @@
+:~ type(E,quantitative), channel(E,x), priority(E,P). [1@P,E]
+:~ type(E,quantitative), channel(E,y), priority(E,P). [1@P,E]
+:~ type(E,quantitative), channel(E,angle), priority(E,P). [1@P,E]
+:~ type(E,quantitative), channel(E,size), priority(E,P). [1@P,E]
+:~ type(E,quantitative), channel(E,color), priority(E,P). [1@P,E]

@@ -114,8 +114,8 @@
           {
             "transform": [
               {
-                "lookup": "symbol",
-                "from": { "param": "index", "key": "symbol" }
+                "lookup": "n",
+                "from": { "param": "index", "key": "n" }
               },
               {
                 "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",

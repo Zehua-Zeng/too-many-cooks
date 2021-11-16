@@ -33,54 +33,135 @@
       }
     },
     "CE-2": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area", "color-hue"]
-            },
-            {
-              "attribute-type": "ordinal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX"]
-            }
-          ],
-          "marks": ["area-other"]
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
         }
-      ]
+      ],
+      "design": {
+        "layer": [
+          {
+            "mark": {
+              "type": "area",
+              "clip": true,
+              "orient": "vertical",
+              "color": "#bdd7e7"
+            },
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal"
+              },
+              "y": {
+                "field": "q",
+                "type": "quantitative",
+                "scale": { "domainMin": 0 }
+              }
+            }
+          },
+          {
+            "transform": [{ "calculate": "0 - datum.q", "as": "nq" }],
+            "mark": {
+              "type": "area",
+              "clip": true,
+              "orient": "vertical",
+              "color": "#ff9999"
+            },
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal"
+              },
+              "y": {
+                "field": "nq",
+                "type": "quantitative",
+                "scale": { "domainMin": 0 }
+              }
+            }
+          },
+          {
+            "transform": [
+              { "calculate": "datum.q - max(datum.q)/2", "as": "nq" }
+            ],
+            "mark": {
+              "type": "area",
+              "clip": true,
+              "orient": "vertical",
+              "color": "#08519c"
+            },
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal"
+              },
+              "y": {
+                "field": "nq",
+                "type": "quantitative",
+                "scale": { "domainMin": 0 }
+              }
+            }
+          },
+          {
+            "transform": [
+              { "calculate": "0 - datum.q - abs(min(datum.q)/2)", "as": "nq" }
+            ],
+            "mark": {
+              "type": "area",
+              "clip": true,
+              "orient": "vertical",
+              "color": "#b30000"
+            },
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal"
+              },
+              "y": {
+                "field": "nq",
+                "type": "quantitative",
+                "scale": { "domainMin": 0 }
+              }
+            }
+          }
+        ],
+        "config": {
+          "area": { "interpolate": "monotone" }
+        }
+      }
     },
     "CE-3": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["color-hue"]
-            },
-            {
-              "attribute-type": "ordinal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX"]
-            }
-          ],
-          "marks": ["point"]
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
         }
-      ]
+      ],
+      "design": {
+        "mark": "tick",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "spectral"
+            }
+          }
+        }
+      }
     }
   },
   "Other Designs": {},
@@ -93,14 +174,16 @@
           "significance": [
             ["CE-3", "CE-1"],
             ["CE-3", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "judge-similarity-2": {
           "rank": [["CE-1, CE-3"], "CE-2"],
           "significance": [
             ["CE-1", "CE-2"],
             ["CE-3", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.05
         }
       }
     },

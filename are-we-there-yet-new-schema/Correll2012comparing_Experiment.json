@@ -73,11 +73,12 @@
         }
       ],
       "design": {
-        "mark": "tick",
+        "mark": "rect",
         "encoding": {
           "x": {
             "field": "t",
-            "type": "temporal"
+            "timeUnit": "yearmonthdate",
+            "type": "ordinal"
           },
           "color": {
             "field": "q",

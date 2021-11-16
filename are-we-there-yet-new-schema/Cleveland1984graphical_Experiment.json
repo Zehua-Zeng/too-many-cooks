@@ -1,0 +1,199 @@
+{
+  "Title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+  "Category": "Hybrid",
+  "Authors": "William S. Cleveland, Robert McGill",
+  "Link": "https://www.jstor.org/stable/2288400",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-5": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": true
+            }
+          },
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "CE-6": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "arc",
+        "encoding": {
+          "theta": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["estimate-difference"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "estimate-difference-1": {
+          "rank": ["CE-1", "CE-2", "CE-3", "CE-4", "CE-5"],
+          "significance": [
+            ["CE-1", "CE-3"],
+            ["CE-1", "CE-4"],
+            ["CE-1", "CE-5"],
+            ["CE-2", "CE-4"],
+            ["CE-2", "CE-5"],
+            ["CE-3", "CE-4"],
+            ["CE-3", "CE-5"]
+          ],
+          "pvalue": 0.05
+        },
+        "estimate-difference-2": {
+          "rank": ["CE-1", "CE-6"],
+          "significance": [["CE-1", "CE-6"]],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}
