@@ -3,12 +3,15 @@
   "Category": "Experiment",
   "Authors": "Jeffrey Heer, Michael Bostock",
   "Link": "https://dl.acm.org/doi/10.1145/1753326.1753357",
-  "Comment": "Vegalite cannot distinguish CE-1 to CE-5",
   "Covered Designs": {
     "CE-1": {
       "fields": [
         {
-          "name": "n",
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
           "type": "string"
         },
         {
@@ -27,16 +30,29 @@
             }
           },
           "x": {
-            "field": "n",
-            "type": "nominal"
+            "field": "n1",
+            "type": "nominal",
+            "axis": null
+          },
+          "column": {
+            "field": "n2",
+            "type": "nominal",
+            "spacing": 10
           }
+        },
+        "config": {
+          "view": { "stroke": "transparent" }
         }
       }
     },
     "CE-2": {
       "fields": [
         {
-          "name": "n",
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
           "type": "string"
         },
         {
@@ -55,7 +71,11 @@
             }
           },
           "x": {
-            "field": "n",
+            "field": "n1",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n2",
             "type": "nominal"
           }
         }
@@ -64,7 +84,11 @@
     "CE-3": {
       "fields": [
         {
-          "name": "n",
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
           "type": "string"
         },
         {
@@ -73,26 +97,31 @@
         }
       ],
       "design": {
-        "mark": "bar",
         "encoding": {
-          "y": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
+          "theta": { "field": "q", "type": "quantitative", "stack": true },
+          "color": { "field": "n1", "type": "nominal", "legend": null },
+          "layer": [
+            {
+              "mark": { "type": "arc", "outerRadius": 80 }
+            },
+            {
+              "mark": { "type": "text", "radius": 90 },
+              "encoding": {
+                "text": { "field": "n2", "type": "nominal" }
+              }
             }
-          },
-          "x": {
-            "field": "n",
-            "type": "nominal"
-          }
+          ]
         }
       }
     },
     "CE-4": {
       "fields": [
         {
-          "name": "n",
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
           "type": "string"
         },
         {
@@ -101,18 +130,19 @@
         }
       ],
       "design": {
-        "mark": "bar",
+        "mark": "circle",
         "encoding": {
           "y": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "field": "n1",
+            "type": "nominal"
           },
           "x": {
-            "field": "n",
+            "field": "n2",
             "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
           }
         }
       }
@@ -120,7 +150,11 @@
     "CE-5": {
       "fields": [
         {
-          "name": "n",
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
           "type": "string"
         },
         {
@@ -129,135 +163,19 @@
         }
       ],
       "design": {
-        "mark": "bar",
+        "mark": "square",
         "encoding": {
           "y": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "field": "n1",
+            "type": "nominal"
           },
           "x": {
-            "field": "n",
+            "field": "n2",
             "type": "nominal"
-          }
-        }
-      }
-    },
-    "CE-6": {
-      "fields": [
-        {
-          "name": "n",
-          "type": "string"
-        },
-        {
-          "name": "q",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "arc",
-        "encoding": {
-          "theta": {
+          },
+          "size": {
             "field": "q",
             "type": "quantitative"
-          },
-          "text": {
-            "field": "n",
-            "type": "nominal"
-          }
-        }
-      }
-    },
-    "CE-7": {
-      "fields": [
-        {
-          "name": "n",
-          "type": "string"
-        },
-        {
-          "name": "q",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "point",
-        "encoding": {
-          "size": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
-          },
-          "x": {
-            "field": "n",
-            "type": "nominal"
-          },
-          "y": {
-            "field": "n",
-            "type": "nominal"
-          }
-        }
-      }
-    },
-    "CE-8": {
-      "fields": [
-        {
-          "name": "n",
-          "type": "string"
-        },
-        {
-          "name": "q",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "rect",
-        "encoding": {
-          "size": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
-          },
-          "x": {
-            "field": "n",
-            "type": "nominal"
-          }
-        }
-      }
-    },
-    "CE-9": {
-      "fields": [
-        {
-          "name": "n",
-          "type": "string"
-        },
-        {
-          "name": "q",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "rect",
-        "encoding": {
-          "size": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
-          },
-          "x": {
-            "field": "n",
-            "type": "nominal"
-          },
-          "y": {
-            "field": "n",
-            "type": "nominal"
           }
         }
       }
@@ -269,40 +187,16 @@
     "Experiment": {
       "accuracy": {
         "estimate-difference-1": {
-          "rank": [
-            "CE-1",
-            "CE-2",
-            "CE-3",
-            "CE-4",
-            "CE-6",
-            "CE-5",
-            "CE-8",
-            "CE-9",
-            "CE-7"
-          ],
+          "rank": ["CE-1", "CE-2", "CE-3", "CE-5", "CE-4"],
           "significance": [
+            ["CE-1", "CE-2"],
+            ["CE-1", "CE-3"],
             ["CE-1", "CE-4"],
-            ["CE-1", "CE-6"],
             ["CE-1", "CE-5"],
-            ["CE-1", "CE-8"],
-            ["CE-1", "CE-9"],
-            ["CE-1", "CE-7"],
-            ["CE-2", "CE-4"],
-            ["CE-2", "CE-6"],
             ["CE-2", "CE-5"],
-            ["CE-2", "CE-8"],
-            ["CE-2", "CE-9"],
-            ["CE-2", "CE-7"],
-            ["CE-3", "CE-6"],
+            ["CE-2", "CE-4"],
             ["CE-3", "CE-5"],
-            ["CE-3", "CE-8"],
-            ["CE-3", "CE-9"],
-            ["CE-3", "CE-7"],
-            ["CE-4", "CE-8"],
-            ["CE-4", "CE-9"],
-            ["CE-4", "CE-7"],
-            ["CE-6", "CE-9"],
-            ["CE-6", "CE-7"]
+            ["CE-3", "CE-4"]
           ],
           "pvalue": 0.05
         }

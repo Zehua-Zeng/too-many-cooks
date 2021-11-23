@@ -1,0 +1,448 @@
+{
+  "Title": "Graphical Perception of Continuous Quantitative Maps: the Effects of Spatial Frequency and Colormap Design",
+  "Category": "Experiment",
+  "Authors": "Khairi Reda, Pratik Nalawade, Kate Ansah-Koi",
+  "Link": "https://dl.acm.org/doi/10.1145/3173574.3173846",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "greys"
+            }
+          }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "blues"
+            }
+          }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "darkred"
+            }
+          }
+        }
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "darkmulti"
+            }
+          }
+        }
+      }
+    },
+    "CE-5": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "inferno"
+            }
+          }
+        }
+      }
+    },
+    "CE-6": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "redblue"
+            }
+          }
+        }
+      }
+    },
+    "CE-7": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "spectral"
+            }
+          }
+        }
+      }
+    },
+    "CE-8": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "yellowgreenblue"
+            }
+          }
+        }
+      }
+    },
+    "CE-9": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "point", "filled": true },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "zero": true,
+              "scheme": "rainbow"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["retrieve-value", "compare-derived-values", "estimate-trend"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "find-maximum": {
+          "rank": [
+            "CE-9",
+            "CE-7",
+            "CE-5",
+            "CE-4",
+            "CE-6",
+            "CE-8",
+            "CE-3",
+            "CE-2",
+            "CE-1"
+          ],
+          "significance": [
+            ["CE-9", "CE-1"],
+            ["CE-7", "CE-1"],
+            ["CE-5", "CE-1"],
+            ["CE-4", "CE-1"],
+            ["CE-6", "CE-1"],
+            ["CE-8", "CE-1"],
+            ["CE-3", "CE-1"],
+            ["CE-2", "CE-1"]
+          ],
+          "pvalue": 0.05
+        },
+        "compare-derived-values-1": {
+          "rank": [
+            [
+              "CE-1",
+              "CE-2",
+              "CE-3",
+              "CE-4",
+              "CE-5",
+              "CE-6",
+              "CE-7",
+              "CE-8",
+              "CE-9"
+            ]
+          ],
+          "significance": []
+        },
+        "compare-derived-values-2": {
+          "rank": [
+            "CE-6",
+            "CE-9",
+            "CE-8",
+            ["CE-1", "CE-2", "CE-3", "CE-4", "CE-5", "CE-7"]
+          ],
+          "significance": [
+            ["CE-6", "CE-1"],
+            ["CE-6", "CE-2"],
+            ["CE-6", "CE-3"],
+            ["CE-6", "CE-4"],
+            ["CE-6", "CE-5"],
+            ["CE-6", "CE-7"],
+            ["CE-8", "CE-1"],
+            ["CE-8", "CE-2"],
+            ["CE-8", "CE-3"],
+            ["CE-8", "CE-4"],
+            ["CE-8", "CE-5"],
+            ["CE-8", "CE-7"],
+            ["CE-9", "CE-1"],
+            ["CE-9", "CE-2"],
+            ["CE-9", "CE-3"],
+            ["CE-9", "CE-4"],
+            ["CE-9", "CE-5"],
+            ["CE-9", "CE-7"]
+          ],
+          "pvalue": 0.05
+        },
+        "estimate-trend-1": {
+          "rank": [
+            ["CE-1", "CE-2", "CE-3", "CE-4", "CE-5", "CE-7", "CE-8", "CE-9"],
+            "CE-6"
+          ],
+          "significance": []
+        },
+        "estimate-trend-2": {
+          "rank": [
+            "CE-6",
+            "CE-7",
+            "CE-8",
+            "CE-4",
+            ["CE-1", "CE-2", "CE-3", "CE-5", "CE-9"]
+          ],
+          "significance": [
+            ["CE-6", "CE-1"],
+            ["CE-6", "CE-2"],
+            ["CE-6", "CE-3"],
+            ["CE-6", "CE-5"],
+            ["CE-6", "CE-9"],
+            ["CE-7", "CE-1"],
+            ["CE-7", "CE-2"],
+            ["CE-7", "CE-3"],
+            ["CE-7", "CE-5"],
+            ["CE-7", "CE-9"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

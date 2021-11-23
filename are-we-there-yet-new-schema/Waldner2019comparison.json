@@ -1,8 +1,8 @@
 {
-  "Title": "The Impact of Distribution and Chart Type on Part-to-Whole Comparisons",
+  "Title": "A Comparison of Radial and Linear charts for Visualizing Daily Patterns",
   "Category": "Experiment",
-  "Authors": "Robert Kosara",
-  "Link": "https://diglib.eg.org/bitstream/handle/10.2312/evs20191162/007-011.pdf?sequence=1&isAllowed=y",
+  "Authors": "Manuela Waldner, Alexandra Diehl, Denis Gracanin, Rainer Splechtna, Claudio Delrieux, Kresimir Matkovic",
+  "Link": "https://ieeexplore.ieee.org/document/8807238",
   "Covered Designs": {
     "CE-1": {
       "layers": [
@@ -17,18 +17,18 @@
               "channels": ["area"]
             },
             {
-              "attribute-type": "nominal",
+              "attribute-type": "ordinal",
               "aggregation": {
                 "aggregation-type": "none",
                 "aggregation-window": "none"
               },
-              "channels": ["color-hue"]
+              "channels": ["orientation"]
             }
           ],
           "marks": ["area-other"]
         }
       ],
-      "note": "pie chart"
+      "note": "2 * 12-hours radial charts"
     },
     "CE-2": {
       "layers": [
@@ -43,18 +43,18 @@
               "channels": ["area"]
             },
             {
-              "attribute-type": "nominal",
+              "attribute-type": "ordinal",
               "aggregation": {
                 "aggregation-type": "none",
                 "aggregation-window": "none"
               },
-              "channels": ["color-hue"]
+              "channels": ["orientation"]
             }
           ],
           "marks": ["area-other"]
         }
       ],
-      "note": "circular slices"
+      "note": "24-hours radial chart"
     },
     "CE-3": {
       "layers": [
@@ -66,21 +66,21 @@
                 "aggregation-type": "none",
                 "aggregation-window": "none"
               },
-              "channels": ["area"]
+              "channels": ["length"]
             },
             {
-              "attribute-type": "nominal",
+              "attribute-type": "ordinal",
               "aggregation": {
                 "aggregation-type": "none",
                 "aggregation-window": "none"
               },
-              "channels": ["color-hue"]
+              "channels": ["positionX"]
             }
           ],
-          "marks": ["area-other"]
+          "marks": ["area-rect"]
         }
       ],
-      "note": "straight line circular"
+      "note": "2 * 12-hours bar charts"
     },
     "CE-4": {
       "layers": [
@@ -95,69 +95,77 @@
               "channels": ["length"]
             },
             {
-              "attribute-type": "nominal",
+              "attribute-type": "ordinal",
               "aggregation": {
                 "aggregation-type": "none",
                 "aggregation-window": "none"
               },
-              "channels": ["color-hue"]
+              "channels": ["positionX"]
             }
           ],
           "marks": ["area-rect"]
         }
-      ]
-    },
-    "CE-5": {
-      "layers": [
-        {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area"]
-            },
-            {
-              "attribute-type": "nominal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["color-hue"]
-            }
-          ],
-          "marks": ["area-rect"]
-        }
-      ]
+      ],
+      "note": "24-hours bar chart"
     }
   },
   "Other Designs": {},
-  "Tasks": ["estimate-difference"],
+  "Tasks": ["locate", "retrieve-value", "find-maximum", "compare-objects"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "estimate-difference": {
-          "rank": [["CE-4", "CE-3", "CE-2"], "CE-1", "CE-5"],
-          "significance": [
-            ["CE-2", "CE-1"],
-            ["CE-1", "CE-5"]
-          ]
+        "locate": {
+          "rank": ["CE-3", "CE-4", "CE-2", "CE-1"],
+          "significance": []
+        },
+        "retrieve-value": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": []
+        },
+        "find-maximum": {
+          "rank": [["CE-2", "CE-4"], "CE-3", "CE-1"],
+          "significance": []
+        },
+        "compare-objects": {
+          "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
+          "significance": []
         }
       },
       "time": {
-        "estimate-difference": {
-          "rank": [
-            ["CE-2", "CE-3"],
-            ["CE-4", "CE-5", "CE-1"]
-          ],
+        "locate": {
+          "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
           "significance": [
-            ["CE-2", "CE-4"],
-            ["CE-2", "CE-5"],
-            ["CE-2", "CE-1"],
-            ["CE-3", "CE-4"],
-            ["CE-3", "CE-5"],
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "retrieve-value": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "find-maximum": {
+          "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "compare-objects": {
+          "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        }
+      },
+      "user-preference": {
+        "overall": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
           ]
         }

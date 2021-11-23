@@ -1,0 +1,65 @@
+{
+  "Title": "An Evaluation of the Impact of Visual Embellishments in Bar Charts",
+  "Category": "Experiment",
+  "Authors": "Drew Skau, Lane Harrison, Robert Kosara",
+  "Link": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.12634",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "y": { "field": "q", "type": "quantitative" },
+          "x": { "field": "n", "type": "nominal" }
+        }
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": { "type": "bar", "cornerRadiusEnd": 10 },
+        "encoding": {
+          "y": { "field": "q", "type": "quantitative" },
+          "x": { "field": "n", "type": "nominal" }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["retrieve-value", "estimate-difference"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "retrieve-value": {
+          "rank": ["CE-1", "CE-2"],
+          "significance": [["CE-1", "CE-2"]],
+          "pvalue": 0.009
+        },
+        "estimate-difference": {
+          "rank": ["CE-1", "CE-2"],
+          "significance": [["CE-1", "CE-2"]],
+          "pvalue": 0.001
+        }
+      }
+    },
+    "Theory": {}
+  }
+}
