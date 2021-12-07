@@ -199,11 +199,13 @@
             ["CE-3", "CE-4"],
             ["CE-3", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "recognize": {
           "rank": ["CE-3", "CE-1"],
-          "significance": [["CE-3", "CE-1"]]
+          "significance": [["CE-3", "CE-1"]],
+          "pvalue": 0.001
         },
         "compare-objects": {
           "rank": [["CE-1", "CE-3", "CE-4"], "CE-2"],
@@ -211,7 +213,8 @@
             ["CE-1", "CE-2"],
             ["CE-3", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "sort": {
           "rank": ["CE-1", "CE-3", "CE-4", "CE-2"],
@@ -222,7 +225,8 @@
             ["CE-3", "CE-4"],
             ["CE-3", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "estimate-trend": {
           "rank": ["CE-1", "CE-4", "CE-2"],
@@ -230,7 +234,8 @@
             ["CE-1", "CE-4"],
             ["CE-1", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "explore-adjacency": {
           "rank": ["CE-2", "CE-1", "CE-4", "CE-3"],
@@ -239,14 +244,16 @@
             ["CE-2", "CE-3"],
             ["CE-2", "CE-4"],
             ["CE-4", "CE-3"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "compute-derived-value": {
           "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         }
       },
       "time": {
@@ -256,7 +263,8 @@
             ["CE-3", "CE-2"],
             ["CE-3", "CE-4"],
             ["CE-1", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.002
         },
         "recognize": {
           "rank": [["CE-1", "CE-3"]],
@@ -268,7 +276,8 @@
             ["CE-1", "CE-2"],
             ["CE-3", "CE-2"],
             ["CE-4", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.002
         },
         "sort": {
           "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],

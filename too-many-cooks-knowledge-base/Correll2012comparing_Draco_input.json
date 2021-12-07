@@ -1,0 +1,92 @@
+[
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "t",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "timeUnit": "yearmonthdate",
+          "type": "ordinal"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "t",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "timeUnit": "yearmonthdate",
+          "type": "ordinal"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.001
+  }
+]

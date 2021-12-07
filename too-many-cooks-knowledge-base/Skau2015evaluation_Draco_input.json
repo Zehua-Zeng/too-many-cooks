@@ -1,0 +1,90 @@
+[
+  {
+    "fields": [
+      {
+        "name": "n",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 10
+      },
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "p-value": 0.009
+  },
+  {
+    "fields": [
+      {
+        "name": "n",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 10
+      },
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "p-value": 0.001
+  }
+]

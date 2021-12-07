@@ -1,0 +1,217 @@
+[
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "viridis"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "viridis"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blueorange"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "viridis"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "turbo"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value-1",
+    "metric": "time",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blueorange"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "retrieve-value-1",
+    "metric": "time",
+    "positive": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "turbo"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  }
+]

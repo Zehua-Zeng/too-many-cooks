@@ -1,0 +1,84 @@
+[
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "t",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "t",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "t",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  }
+]

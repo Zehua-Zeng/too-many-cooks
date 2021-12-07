@@ -437,7 +437,8 @@
             ["CE-1", "CE-10"],
             ["CE-2", "CE-11"],
             ["CE-3", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "cluster": {
           "rank": [
@@ -466,7 +467,8 @@
             ["CE-10", "CE-7"],
             ["CE-11", "CE-8"],
             ["CE-12", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "correlate": {
           "rank": [
@@ -495,7 +497,8 @@
             ["CE-4", "CE-13"],
             ["CE-5", "CE-14"],
             ["CE-6", "CE-15"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "compute-derived-value": {
           "rank": [
@@ -518,7 +521,8 @@
             ["CE-1", "CE-7"],
             ["CE-2", "CE-8"],
             ["CE-3", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "characterize-distribution": {
           "rank": [
@@ -552,7 +556,8 @@
             ["CE-4", "CE-7"],
             ["CE-5", "CE-8"],
             ["CE-6", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "retrieve-value": {
           "rank": [
@@ -572,7 +577,8 @@
             ["CE-10", "CE-7"],
             ["CE-11", "CE-8"],
             ["CE-12", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "filter": {
           "rank": [
@@ -611,7 +617,8 @@
             ["CE-4", "CE-13"],
             ["CE-5", "CE-14"],
             ["CE-6", "CE-15"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "cluster": {
           "rank": [
@@ -634,7 +641,8 @@
             ["CE-4", "CE-7"],
             ["CE-5", "CE-8"],
             ["CE-6", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "correlate": {
           "rank": [
@@ -663,7 +671,8 @@
             ["CE-4", "CE-13"],
             ["CE-5", "CE-14"],
             ["CE-6", "CE-15"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "compute-derived-value": {
           "rank": [
@@ -683,7 +692,8 @@
             ["CE-13", "CE-7"],
             ["CE-14", "CE-8"],
             ["CE-15", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "characterize-distribution": {
           "rank": [
@@ -706,7 +716,8 @@
             ["CE-4", "CE-13"],
             ["CE-5", "CE-14"],
             ["CE-6", "CE-15"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "find-extremum": {
           "rank": [
@@ -723,7 +734,8 @@
             ["CE-4", "CE-13"],
             ["CE-5", "CE-14"],
             ["CE-6", "CE-15"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "sort": {
           "rank": [
@@ -746,7 +758,8 @@
             ["CE-1", "CE-10"],
             ["CE-2", "CE-11"],
             ["CE-3", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "retrieve-value": {
           "rank": [
@@ -775,7 +788,8 @@
             ["CE-4", "CE-7"],
             ["CE-5", "CE-8"],
             ["CE-6", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "filter": {
           "rank": [
@@ -804,7 +818,8 @@
             ["CE-13", "CE-10"],
             ["CE-14", "CE-11"],
             ["CE-15", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "determine-range": {
           "rank": [
@@ -839,7 +854,8 @@
             ["CE-4", "CE-10"],
             ["CE-5", "CE-11"],
             ["CE-6", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "cluster": {
           "rank": [
@@ -862,7 +878,8 @@
             ["CE-13", "CE-7"],
             ["CE-14", "CE-8"],
             ["CE-15", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "correlate": {
           "rank": [
@@ -891,7 +908,8 @@
             ["CE-4", "CE-10"],
             ["CE-5", "CE-11"],
             ["CE-6", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "compute-derived-value": {
           "rank": [
@@ -920,7 +938,8 @@
             ["CE-4", "CE-7"],
             ["CE-5", "CE-8"],
             ["CE-6", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "characterize-distribution": {
           "rank": [
@@ -943,7 +962,8 @@
             ["CE-4", "CE-10"],
             ["CE-5", "CE-11"],
             ["CE-6", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "find-extremum": {
           "rank": [
@@ -966,7 +986,8 @@
             ["CE-4", "CE-10"],
             ["CE-5", "CE-11"],
             ["CE-6", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "sort": {
           "rank": [
@@ -989,7 +1010,8 @@
             ["CE-4", "CE-10"],
             ["CE-5", "CE-11"],
             ["CE-6", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "retrieve-value": {
           "rank": [
@@ -1012,7 +1034,8 @@
             ["CE-13", "CE-10"],
             ["CE-14", "CE-11"],
             ["CE-15", "CE-12"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "filter": {
           "rank": [
@@ -1041,7 +1064,8 @@
             ["CE-10", "CE-7"],
             ["CE-11", "CE-8"],
             ["CE-12", "CE-9"]
-          ]
+          ],
+          "pvalue": 0.05
         },
         "determine-range": {
           "rank": [

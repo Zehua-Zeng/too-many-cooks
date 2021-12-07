@@ -155,28 +155,32 @@
           "significance": [
             ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "retrieve-value": {
           "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
           "significance": [
             ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "find-maximum": {
           "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
           "significance": [
             ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
-          ]
+          ],
+          "pvalue": 0.008
         },
         "compare-objects": {
           "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
-          ]
+          ],
+          "pvalue": 0.001
         }
       },
       "user-preference": {
@@ -185,7 +189,8 @@
           "significance": [
             ["CE-4", "CE-2"],
             ["CE-3", "CE-1"]
-          ]
+          ],
+          "pvalue": 0.001
         }
       }
     },

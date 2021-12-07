@@ -241,7 +241,8 @@
             ["CE-3", "CE-1"],
             ["CE-3", "CE-2"],
             ["CE-1", "CE-2"]
-          ]
+          ],
+          "pvalue": 0.001
         },
         "estimate-trend": {
           "rank": ["CE-3", ["CE-1", "CE-2"]],

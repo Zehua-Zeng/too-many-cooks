@@ -1,0 +1,481 @@
+[
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal",
+          "axis": null
+        },
+        "xOffset": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal",
+          "axis": null
+        },
+        "xOffset": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "encoding": {
+        "theta": {
+          "field": "q",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "field": "n1",
+          "type": "nominal",
+          "legend": null
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "arc",
+              "outerRadius": 80
+            }
+          },
+          {
+            "mark": {
+              "type": "text",
+              "radius": 90
+            },
+            "encoding": {
+              "text": {
+                "field": "n2",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal",
+          "axis": null
+        },
+        "xOffset": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal",
+          "axis": null
+        },
+        "xOffset": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "square",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "square",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "n2",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "encoding": {
+        "theta": {
+          "field": "q",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "field": "n1",
+          "type": "nominal",
+          "legend": null
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "arc",
+              "outerRadius": 80
+            }
+          },
+          {
+            "mark": {
+              "type": "text",
+              "radius": 90
+            },
+            "encoding": {
+              "text": {
+                "field": "n2",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "negative": {
+      "mark": "square",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "type": "string"
+      },
+      {
+        "name": "q",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-difference-1",
+    "metric": "accuracy",
+    "positive": {
+      "encoding": {
+        "theta": {
+          "field": "q",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "field": "n1",
+          "type": "nominal",
+          "legend": null
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "arc",
+              "outerRadius": 80
+            }
+          },
+          {
+            "mark": {
+              "type": "text",
+              "radius": 90
+            },
+            "encoding": {
+              "text": {
+                "field": "n2",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "y": {
+          "field": "n1",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "n2",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.05
+  }
+]

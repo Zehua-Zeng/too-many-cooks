@@ -1,0 +1,2342 @@
+[
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkmulti"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "find-maximum",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkmulti"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkmulti"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkmulti"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "compare-derived-values-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "redblue"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greys"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "darkred"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "inferno"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "q1",
+        "type": "number"
+      },
+      {
+        "name": "q2",
+        "type": "number"
+      },
+      {
+        "name": "q3",
+        "type": "number"
+      }
+    ],
+    "task": "estimate-trend-2",
+    "metric": "accuracy",
+    "positive": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "spectral"
+          }
+        }
+      }
+    },
+    "negative": {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "q3",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "rainbow"
+          }
+        }
+      }
+    },
+    "p-value": 0.05
+  }
+]
