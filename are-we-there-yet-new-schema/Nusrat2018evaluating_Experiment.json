@@ -5,108 +5,176 @@
   "Link": "https://ieeexplore.ieee.org/document/7792176",
   "Covered Designs": {
     "CE-1": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area"]
-            },
-            {
-              "attribute-type": "nominal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX", "positionY"]
-            }
-          ],
-          "marks": ["area-other"]
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
         }
       ],
-      "note": "contiguous cartogram"
+      "design": {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "longitude": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
     },
     "CE-2": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area"]
-            },
-            {
-              "attribute-type": "nominal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX", "positionY"]
-            }
-          ],
-          "marks": ["area-rect"]
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
         }
       ],
-      "note": "rectangular cartogram"
+      "design": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
     },
     "CE-3": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area"]
-            },
-            {
-              "attribute-type": "nominal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX", "positionY"]
-            }
-          ],
-          "marks": ["area-other"]
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
         }
       ],
-      "note": "non-contiguous cartogram"
+      "design": {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeWidth": 10
+        },
+        "encoding": {
+          "longitude": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
     },
     "CE-4": {
-      "layers": [
+      "fields": [
         {
-          "encodings": [
-            {
-              "attribute-type": "quantitative",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["area"]
-            },
-            {
-              "attribute-type": "nominal",
-              "aggregation": {
-                "aggregation-type": "none",
-                "aggregation-window": "none"
-              },
-              "channels": ["positionX", "positionY"]
-            }
-          ],
-          "marks": ["area-circle"]
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
         }
       ],
-      "note": "dorling cartogram"
+      "design": {
+        "mark": "circle",
+        "encoding": {
+          "longitude": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
     }
   },
   "Other Designs": {},

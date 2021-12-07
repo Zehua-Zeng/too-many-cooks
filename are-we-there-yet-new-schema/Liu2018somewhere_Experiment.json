@@ -16,16 +16,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "greys"
             }
           }
@@ -44,16 +40,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "blues"
             }
           }
@@ -72,16 +64,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "greens"
             }
           }
@@ -100,16 +88,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "oranges"
             }
           }
@@ -128,16 +112,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "viridis"
             }
           }
@@ -156,16 +136,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "magma"
             }
           }
@@ -184,16 +160,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "plasma"
             }
           }
@@ -212,16 +184,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "blueorange"
             }
           }
@@ -240,16 +208,12 @@
         "encoding": {
           "x": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "color": {
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "turbo"
             }
           }

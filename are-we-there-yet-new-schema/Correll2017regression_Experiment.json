@@ -24,10 +24,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }
@@ -52,10 +49,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }
@@ -80,10 +74,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }

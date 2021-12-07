@@ -24,10 +24,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }
@@ -192,7 +189,6 @@
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "greens"
             }
           }
@@ -270,35 +266,6 @@
         }
       }
     },
-    "CE-7": {
-      "fields": [
-        {
-          "name": "q",
-          "type": "number"
-        },
-        {
-          "name": "t",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "point",
-        "encoding": {
-          "x": {
-            "field": "t",
-            "type": "temporal"
-          },
-          "color": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true,
-              "scheme": "greens"
-            }
-          }
-        }
-      }
-    },
     "CE-8": {
       "fields": [
         {
@@ -334,7 +301,6 @@
             "field": "rolling_mean",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "greens"
             }
           }
@@ -355,16 +321,7 @@
     "Experiment": {
       "accuracy": {
         "find-maximum": {
-          "rank": [
-            "CE-4",
-            "CE-2",
-            "CE-1",
-            "CE-3",
-            "CE-6",
-            "CE-8",
-            "CE-5",
-            "CE-7"
-          ],
+          "rank": ["CE-4", "CE-2", "CE-1", "CE-3", "CE-6", "CE-8", "CE-5"],
           "significance": [
             ["CE-4", "CE-3"],
             ["CE-2", "CE-3"],
@@ -378,28 +335,14 @@
             ["CE-4", "CE-5"],
             ["CE-2", "CE-5"],
             ["CE-1", "CE-5"],
-            ["CE-4", "CE-7"],
-            ["CE-2", "CE-7"],
-            ["CE-1", "CE-7"],
             ["CE-3", "CE-8"],
             ["CE-3", "CE-5"],
-            ["CE-3", "CE-7"],
             ["CE-6", "CE-8"],
-            ["CE-6", "CE-5"],
-            ["CE-6", "CE-7"]
+            ["CE-6", "CE-5"]
           ]
         },
         "find-minimum": {
-          "rank": [
-            "CE-2",
-            "CE-3",
-            "CE-4",
-            "CE-1",
-            "CE-6",
-            "CE-8",
-            "CE-5",
-            "CE-7"
-          ],
+          "rank": ["CE-2", "CE-3", "CE-4", "CE-1", "CE-6", "CE-8", "CE-5"],
           "significance": [
             ["CE-2", "CE-1"],
             ["CE-3", "CE-1"],
@@ -413,77 +356,44 @@
             ["CE-2", "CE-5"],
             ["CE-3", "CE-5"],
             ["CE-4", "CE-5"],
-            ["CE-2", "CE-7"],
-            ["CE-3", "CE-7"],
-            ["CE-4", "CE-7"],
             ["CE-1", "CE-8"],
             ["CE-1", "CE-5"],
-            ["CE-1", "CE-7"],
             ["CE-6", "CE-8"],
-            ["CE-6", "CE-5"],
-            ["CE-6", "CE-7"]
+            ["CE-6", "CE-5"]
           ]
         },
         "determine-range": {
-          "rank": [
-            "CE-2",
-            "CE-3",
-            "CE-4",
-            "CE-1",
-            "CE-6",
-            "CE-5",
-            "CE-8",
-            "CE-7"
-          ],
+          "rank": ["CE-2", "CE-3", "CE-4", "CE-1", "CE-6", "CE-5", "CE-8"],
           "significance": [
             ["CE-2", "CE-4"],
             ["CE-2", "CE-1"],
             ["CE-2", "CE-6"],
             ["CE-2", "CE-5"],
             ["CE-2", "CE-8"],
-            ["CE-2", "CE-7"],
             ["CE-3", "CE-4"],
             ["CE-3", "CE-1"],
             ["CE-3", "CE-6"],
             ["CE-3", "CE-5"],
             ["CE-3", "CE-8"],
-            ["CE-3", "CE-7"],
             ["CE-4", "CE-6"],
             ["CE-4", "CE-5"],
             ["CE-4", "CE-8"],
-            ["CE-4", "CE-7"],
             ["CE-1", "CE-6"],
             ["CE-1", "CE-5"],
             ["CE-1", "CE-8"],
-            ["CE-1", "CE-7"],
             ["CE-6", "CE-5"],
-            ["CE-6", "CE-8"],
-            ["CE-6", "CE-7"]
+            ["CE-6", "CE-8"]
           ]
         },
         "compare-derived-values": {
-          "rank": [
-            "CE-4",
-            "CE-7",
-            "CE-6",
-            "CE-3",
-            "CE-5",
-            "CE-2",
-            "CE-8",
-            "CE-1"
-          ],
+          "rank": ["CE-4", "CE-6", "CE-3", "CE-5", "CE-2", "CE-8", "CE-1"],
           "significance": [
-            ["CE-4", "CE-7"],
             ["CE-4", "CE-6"],
             ["CE-4", "CE-3"],
             ["CE-4", "CE-5"],
             ["CE-4", "CE-2"],
             ["CE-4", "CE-8"],
             ["CE-4", "CE-1"],
-            ["CE-7", "CE-5"],
-            ["CE-7", "CE-2"],
-            ["CE-7", "CE-8"],
-            ["CE-7", "CE-1"],
             ["CE-6", "CE-5"],
             ["CE-6", "CE-2"],
             ["CE-6", "CE-8"],
@@ -495,32 +405,24 @@
           ]
         },
         "characterize-distribution": {
-          "rank": ["CE-3", "CE-7", "CE-5", "CE-4", "CE-1", "CE-8", "CE-2"],
+          "rank": ["CE-3", "CE-5", "CE-4", "CE-1", "CE-8", "CE-2"],
           "significance": [
-            ["CE-3", "CE-7"],
             ["CE-3", "CE-5"],
             ["CE-3", "CE-4"],
             ["CE-3", "CE-1"],
             ["CE-3", "CE-8"],
             ["CE-3", "CE-2"],
-            ["CE-7", "CE-8"],
-            ["CE-7", "CE-2"],
             ["CE-5", "CE-8"],
             ["CE-5", "CE-2"]
           ]
         },
         "find-anomalies": {
-          "rank": ["CE-8", "CE-1", "CE-2", "CE-4", "CE-5", "CE-7"],
+          "rank": ["CE-8", "CE-1", "CE-2", "CE-4", "CE-5"],
           "significance": [
             ["CE-8", "CE-1"],
             ["CE-8", "CE-2"],
             ["CE-8", "CE-4"],
-            ["CE-8", "CE-5"],
-            ["CE-8", "CE-7"],
-            ["CE-1", "CE-7"],
-            ["CE-2", "CE-7"],
-            ["CE-4", "CE-7"],
-            ["CE-5", "CE-7"]
+            ["CE-8", "CE-5"]
           ]
         }
       }

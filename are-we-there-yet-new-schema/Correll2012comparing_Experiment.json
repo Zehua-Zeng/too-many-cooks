@@ -25,10 +25,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }
@@ -53,10 +50,7 @@
           },
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           }
         }
       }
@@ -84,36 +78,6 @@
             "field": "q",
             "type": "quantitative",
             "scale": {
-              "zero": true,
-              "scheme": "spectral"
-            }
-          }
-        }
-      }
-    },
-    "CE-4": {
-      "fields": [
-        {
-          "name": "q",
-          "type": "number"
-        },
-        {
-          "name": "t",
-          "type": "number"
-        }
-      ],
-      "design": {
-        "mark": "point",
-        "encoding": {
-          "x": {
-            "field": "t",
-            "type": "temporal"
-          },
-          "color": {
-            "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true,
               "scheme": "spectral"
             }
           }
@@ -127,11 +91,8 @@
     "Experiment": {
       "accuracy": {
         "compare-derived-values": {
-          "rank": ["CE-4", "CE-3", ["CE-1", "CE-2"]],
+          "rank": ["CE-3", ["CE-1", "CE-2"]],
           "significance": [
-            ["CE-4", "CE-3"],
-            ["CE-4", "CE-1"],
-            ["CE-4", "CE-2"],
             ["CE-3", "CE-1"],
             ["CE-3", "CE-2"]
           ],

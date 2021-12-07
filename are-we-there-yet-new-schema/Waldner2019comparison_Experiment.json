@@ -1,0 +1,194 @@
+{
+  "Title": "A Comparison of Radial and Linear charts for Visualizing Daily Patterns",
+  "Category": "Experiment",
+  "Authors": "Manuela Waldner, Alexandra Diehl, Denis Gracanin, Rainer Splechtna, Claudio Delrieux, Kresimir Matkovic",
+  "Link": "https://ieeexplore.ieee.org/document/8807238",
+  "Covered Designs": {
+    "CE-1": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number",
+          "cardinality": 24
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "transform": [
+          {
+            "calculate": "slice(datum, 0, datum.length / 2)",
+            "as": "arr1"
+          },
+          {
+            "calculate": "slice(datum, datum.length / 2)",
+            "as": "arr2"
+          }
+        ],
+        "hconcat": [
+          {
+            "mark": "arc",
+            "encoding": {
+              "theta": { "field": "arr1.o", "type": "ordinal" },
+              "radius": { "field": "arr1.q", "type": "quantitative" }
+            }
+          },
+          {
+            "mark": "arc",
+            "encoding": {
+              "theta": { "field": "arr2.o", "type": "ordinal" },
+              "radius": { "field": "arr2.q", "type": "quantitative" }
+            }
+          }
+        ]
+      }
+    },
+    "CE-2": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number",
+          "cardinality": 24
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "arc",
+        "encoding": {
+          "theta": { "field": "o", "type": "ordinal" },
+          "radius": { "field": "q", "type": "quantitative" }
+        }
+      }
+    },
+    "CE-3": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number",
+          "cardinality": 24
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "transform": [
+          {
+            "calculate": "slice(datum, 0, datum.length / 2)",
+            "as": "arr1"
+          },
+          {
+            "calculate": "slice(datum, datum.length / 2)",
+            "as": "arr2"
+          }
+        ],
+        "hconcat": [
+          {
+            "mark": "bar",
+            "encoding": {
+              "x": { "field": "arr1.o", "type": "ordinal" },
+              "y": { "field": "arr1.q", "type": "quantitative" }
+            }
+          },
+          {
+            "mark": "bar",
+            "encoding": {
+              "x": { "field": "arr2.o", "type": "ordinal" },
+              "y": { "field": "arr2.q", "type": "quantitative" }
+            }
+          }
+        ]
+      }
+    },
+    "CE-4": {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number",
+          "cardinality": 24
+        },
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "design": {
+        "mark": "bar",
+        "encoding": {
+          "x": { "field": "o", "type": "ordinal" },
+          "y": { "field": "q", "type": "quantitative" }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["locate", "retrieve-value", "find-maximum", "compare-objects"],
+  "Results": {
+    "Experiment": {
+      "accuracy": {
+        "locate": {
+          "rank": ["CE-3", "CE-4", "CE-2", "CE-1"],
+          "significance": []
+        },
+        "retrieve-value": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": []
+        },
+        "find-maximum": {
+          "rank": [["CE-2", "CE-4"], "CE-3", "CE-1"],
+          "significance": []
+        },
+        "compare-objects": {
+          "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
+          "significance": []
+        }
+      },
+      "time": {
+        "locate": {
+          "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "retrieve-value": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "find-maximum": {
+          "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        },
+        "compare-objects": {
+          "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        }
+      },
+      "user-preference": {
+        "overall": {
+          "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
+          "significance": [
+            ["CE-4", "CE-2"],
+            ["CE-3", "CE-1"]
+          ]
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

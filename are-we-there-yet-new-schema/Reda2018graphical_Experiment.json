@@ -34,7 +34,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "greys"
             }
           }
@@ -71,7 +70,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "blues"
             }
           }
@@ -108,7 +106,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "darkred"
             }
           }
@@ -145,7 +142,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "darkmulti"
             }
           }
@@ -182,7 +178,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "inferno"
             }
           }
@@ -219,7 +214,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "redblue"
             }
           }
@@ -256,7 +250,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "spectral"
             }
           }
@@ -293,7 +286,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "yellowgreenblue"
             }
           }
@@ -330,7 +322,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "rainbow"
             }
           }

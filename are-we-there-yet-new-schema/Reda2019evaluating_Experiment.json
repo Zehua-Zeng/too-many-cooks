@@ -34,7 +34,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "redblue"
             }
           }
@@ -71,7 +70,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "viridis"
             }
           }
@@ -108,7 +106,6 @@
             "field": "q3",
             "type": "quantitative",
             "scale": {
-              "zero": true,
               "scheme": "rainbow"
             }
           }

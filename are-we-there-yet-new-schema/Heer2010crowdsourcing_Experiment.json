@@ -24,24 +24,17 @@
         "encoding": {
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "x": {
             "field": "n1",
             "type": "nominal",
             "axis": null
           },
-          "column": {
+          "xOffset": {
             "field": "n2",
-            "type": "nominal",
-            "spacing": 10
+            "type": "nominal"
           }
-        },
-        "config": {
-          "view": { "stroke": "transparent" }
         }
       }
     },
@@ -65,10 +58,7 @@
         "encoding": {
           "y": {
             "field": "q",
-            "type": "quantitative",
-            "scale": {
-              "zero": true
-            }
+            "type": "quantitative"
           },
           "x": {
             "field": "n1",
