@@ -17,7 +17,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -77,7 +77,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -141,7 +141,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -201,7 +201,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -265,7 +265,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": "point",
@@ -325,131 +325,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "point",
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "shape": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "negative": {
-      "mark": "point",
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "shape": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string",
-        "cardinality": 2
-      },
-      {
-        "name": "q1",
-        "type": "number",
-        "cardinality": 50
-      },
-      {
-        "name": "q2",
-        "type": "number",
-        "cardinality": 50
-      }
-    ],
-    "task": "compare-derived-values-1",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "point",
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "shape": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "negative": {
-      "mark": "point",
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "shape": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string",
-        "cardinality": 2
-      },
-      {
-        "name": "q1",
-        "type": "number",
-        "cardinality": 50
-      },
-      {
-        "name": "q2",
-        "type": "number",
-        "cardinality": 50
-      }
-    ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": "point",
@@ -513,7 +389,131 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "shape": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "shape": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n",
+        "type": "string",
+        "cardinality": 2
+      },
+      {
+        "name": "q1",
+        "type": "number",
+        "cardinality": 50
+      },
+      {
+        "name": "q2",
+        "type": "number",
+        "cardinality": 50
+      }
+    ],
+    "task": "compare-derived-values",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "shape": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "negative": {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "q1",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "q2",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "shape": {
+          "field": "n",
+          "type": "nominal"
+        }
+      }
+    },
+    "p-value": 0.05
+  },
+  {
+    "fields": [
+      {
+        "name": "n",
+        "type": "string",
+        "cardinality": 2
+      },
+      {
+        "name": "q1",
+        "type": "number",
+        "cardinality": 50
+      },
+      {
+        "name": "q2",
+        "type": "number",
+        "cardinality": 50
+      }
+    ],
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -598,7 +598,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -687,7 +687,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -753,7 +753,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-1",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -823,7 +823,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-3",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": "point",
@@ -887,7 +887,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-4",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": "point",
@@ -947,7 +947,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-6",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1011,7 +1011,7 @@
         "cardinality": 50
       }
     ],
-    "task": "compare-derived-values-8",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {

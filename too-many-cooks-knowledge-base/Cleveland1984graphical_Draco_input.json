@@ -14,7 +14,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-difference-1",
+    "task": "estimate-difference",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -74,7 +74,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-difference-2",
+    "task": "estimate-difference",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",

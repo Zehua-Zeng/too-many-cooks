@@ -10,7 +10,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -51,7 +51,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -109,7 +109,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -150,7 +150,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -208,7 +208,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -266,7 +266,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -341,7 +341,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -399,761 +399,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "circle",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "size": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "mark": "circle",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "size": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "circle",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "size": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "x": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "mark": "circle",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "size": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "x": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "circle",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "size": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-1",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "circle",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "size": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "mark": "circle",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "size": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.005
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "x": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "mark": "circle",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "size": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "circle",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "size": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "x": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "y": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "q",
-              "type": "quantitative"
-            }
-          }
-        },
-        {
-          "mark": "image",
-          "encoding": {
-            "x": {
-              "field": "n",
-              "type": "nominal"
-            },
-            "url": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "mark": "circle",
-      "encoding": {
-        "x": {
-          "field": "n",
-          "type": "nominal"
-        },
-        "size": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "n",
-        "type": "string"
-      }
-    ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -1215,6 +461,337 @@
         }
       ]
     },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "size": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "size": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "size": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.005
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
     "p-value": 0.001
   },
   {
@@ -1228,7 +805,430 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "size": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "y": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "n",
+          "type": "nominal"
+        },
+        "size": {
+          "field": "q",
+          "type": "quantitative"
+        }
+      }
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
+    "metric": "accuracy",
+    "positive": {
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "negative": {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "size": {
+              "field": "q",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": "image",
+          "encoding": {
+            "x": {
+              "field": "n",
+              "type": "nominal"
+            },
+            "url": {
+              "field": "n",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    },
+    "p-value": 0.001
+  },
+  {
+    "fields": [
+      {
+        "name": "q",
+        "type": "number"
+      },
+      {
+        "name": "n",
+        "type": "string"
+      }
+    ],
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1286,7 +1286,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1344,7 +1344,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1419,7 +1419,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1477,7 +1477,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1552,7 +1552,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -1593,7 +1593,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -1651,7 +1651,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -1692,7 +1692,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -1750,7 +1750,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1808,7 +1808,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1866,7 +1866,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1924,7 +1924,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1982,7 +1982,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2057,7 +2057,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2115,7 +2115,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2190,7 +2190,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -2231,7 +2231,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -2289,7 +2289,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -2330,7 +2330,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -2388,7 +2388,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2446,7 +2446,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2504,7 +2504,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "circle",
@@ -2570,7 +2570,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "circle",
@@ -2615,7 +2615,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "circle",
@@ -2677,7 +2677,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2739,7 +2739,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "layer": [
@@ -2822,7 +2822,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",
@@ -2900,7 +2900,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-4",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "transform": [

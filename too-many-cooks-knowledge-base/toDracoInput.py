@@ -22,6 +22,9 @@ def to_draco (read_json):
                 sig = read_json["Results"][type][metric][task]["significance"]
                 if len(sig) == 0:
                     continue
+                task_short = task
+                if task[-1].isdigit():
+                    task_short = task[: -2]
                 pvalue = read_json["Results"][type][metric][task]["pvalue"]
                 for pair in sig:
                     one_comparison = {}
@@ -33,7 +36,7 @@ def to_draco (read_json):
                         print ("not same fields: " + pos + ", " + neg)
                         continue
                     one_comparison["fields"] = read_json["Covered Designs"][pos]["fields"]
-                    one_comparison["task"] = task
+                    one_comparison["task"] = task_short
                     one_comparison["metric"] = metric
                     one_comparison["positive"] = read_json["Covered Designs"][pos]["design"]
                     one_comparison["negative"] = read_json["Covered Designs"][neg]["design"]

@@ -14,7 +14,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -440,7 +440,7 @@
         "type": "number"
       }
     ],
-    "task": "overall-2",
+    "task": "overall",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -580,7 +580,7 @@
         "type": "number"
       }
     ],
-    "task": "overall-2",
+    "task": "overall",
     "metric": "accuracy",
     "positive": {
       "layer": [
@@ -723,7 +723,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-1",
+    "task": "estimate-trend",
     "metric": "time",
     "positive": {
       "mark": "line",
@@ -779,7 +779,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "time",
     "positive": {
       "layer": [
@@ -1118,7 +1118,7 @@
         "type": "number"
       }
     ],
-    "task": "overall-1",
+    "task": "overall",
     "metric": "time",
     "positive": {
       "mark": "line",

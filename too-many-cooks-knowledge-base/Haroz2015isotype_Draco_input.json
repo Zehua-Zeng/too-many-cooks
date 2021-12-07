@@ -10,7 +10,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -65,7 +65,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -132,7 +132,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -192,7 +192,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -264,7 +264,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-2",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "bar",
@@ -306,7 +306,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -361,7 +361,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -428,7 +428,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -488,7 +488,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-3",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -560,7 +560,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-4",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -613,7 +613,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-4",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -680,7 +680,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-4",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -740,7 +740,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-4",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "transform": [
@@ -814,7 +814,7 @@
         "type": "string"
       }
     ],
-    "task": "retrieve-value-5",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "bar",

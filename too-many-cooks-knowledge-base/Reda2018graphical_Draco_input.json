@@ -534,7 +534,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -599,7 +599,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -664,7 +664,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -729,7 +729,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -794,7 +794,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -859,7 +859,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -924,7 +924,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -989,7 +989,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1054,7 +1054,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1119,7 +1119,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1184,7 +1184,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1249,7 +1249,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1314,7 +1314,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1379,7 +1379,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1444,7 +1444,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1509,7 +1509,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1574,7 +1574,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1639,7 +1639,7 @@
         "type": "number"
       }
     ],
-    "task": "compare-derived-values-2",
+    "task": "compare-derived-values",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1704,7 +1704,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1769,7 +1769,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1834,7 +1834,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1899,7 +1899,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -1964,7 +1964,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -2029,7 +2029,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -2094,7 +2094,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -2159,7 +2159,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -2224,7 +2224,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {
@@ -2289,7 +2289,7 @@
         "type": "number"
       }
     ],
-    "task": "estimate-trend-2",
+    "task": "estimate-trend",
     "metric": "accuracy",
     "positive": {
       "mark": {

@@ -6,7 +6,7 @@
         "type": "number"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "rect",
@@ -49,7 +49,7 @@
         "type": "number"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "rect",
@@ -92,7 +92,7 @@
         "type": "number"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "accuracy",
     "positive": {
       "mark": "rect",
@@ -135,7 +135,7 @@
         "type": "number"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "rect",
@@ -178,7 +178,7 @@
         "type": "number"
       }
     ],
-    "task": "retrieve-value-1",
+    "task": "retrieve-value",
     "metric": "time",
     "positive": {
       "mark": "rect",

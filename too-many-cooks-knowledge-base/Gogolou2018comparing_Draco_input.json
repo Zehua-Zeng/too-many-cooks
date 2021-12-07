@@ -10,7 +10,7 @@
         "type": "number"
       }
     ],
-    "task": "judge-similarity-1",
+    "task": "judge-similarity",
     "metric": "time",
     "positive": {
       "mark": "tick",
@@ -54,7 +54,7 @@
         "type": "number"
       }
     ],
-    "task": "judge-similarity-1",
+    "task": "judge-similarity",
     "metric": "time",
     "positive": {
       "mark": "tick",
@@ -196,7 +196,7 @@
         "type": "number"
       }
     ],
-    "task": "judge-similarity-2",
+    "task": "judge-similarity",
     "metric": "time",
     "positive": {
       "mark": "line",
@@ -335,7 +335,7 @@
         "type": "number"
       }
     ],
-    "task": "judge-similarity-2",
+    "task": "judge-similarity",
     "metric": "time",
     "positive": {
       "mark": "tick",
