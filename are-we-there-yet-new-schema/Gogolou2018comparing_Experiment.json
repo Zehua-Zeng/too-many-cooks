@@ -161,11 +161,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["judge-similarity"],
+  "Tasks": ["judge_similarity"],
   "Results": {
     "Experiment": {
       "time": {
-        "judge-similarity-1": {
+        "judge_similarity-1": {
           "rank": ["CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-1"],
@@ -173,7 +173,7 @@
           ],
           "pvalue": 0.05
         },
-        "judge-similarity-2": {
+        "judge_similarity-2": {
           "rank": [["CE-1, CE-3"], "CE-2"],
           "significance": [
             ["CE-1", "CE-2"],

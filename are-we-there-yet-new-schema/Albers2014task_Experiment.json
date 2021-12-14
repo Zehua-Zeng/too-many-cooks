@@ -310,17 +310,17 @@
   },
   "Other Designs": {},
   "Tasks": [
-    "find-maximum",
-    "find-minimum",
-    "determine-range",
-    "compare-derived-values",
-    "characterize-distribution",
-    "find-anomalies"
+    "find_maximum",
+    "find_minimum",
+    "determine_range",
+    "compare_derived_values",
+    "characterize_distribution",
+    "find_anomalies"
   ],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "find-maximum": {
+        "find_maximum": {
           "rank": ["CE-4", "CE-2", "CE-1", "CE-3", "CE-6", "CE-8", "CE-5"],
           "significance": [
             ["CE-4", "CE-3"],
@@ -342,7 +342,7 @@
           ],
           "pvalue": 0.0001
         },
-        "find-minimum": {
+        "find_minimum": {
           "rank": ["CE-2", "CE-3", "CE-4", "CE-1", "CE-6", "CE-8", "CE-5"],
           "significance": [
             ["CE-2", "CE-1"],
@@ -364,7 +364,7 @@
           ],
           "pvalue": 0.0001
         },
-        "determine-range": {
+        "determine_range": {
           "rank": ["CE-2", "CE-3", "CE-4", "CE-1", "CE-6", "CE-5", "CE-8"],
           "significance": [
             ["CE-2", "CE-4"],
@@ -388,7 +388,7 @@
           ],
           "pvalue": 0.0001
         },
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": ["CE-4", "CE-6", "CE-3", "CE-5", "CE-2", "CE-8", "CE-1"],
           "significance": [
             ["CE-4", "CE-6"],
@@ -408,7 +408,7 @@
           ],
           "pvalue": 0.0001
         },
-        "characterize-distribution": {
+        "characterize_distribution": {
           "rank": ["CE-3", "CE-5", "CE-4", "CE-1", "CE-8", "CE-2"],
           "significance": [
             ["CE-3", "CE-5"],
@@ -421,7 +421,7 @@
           ],
           "pvalue": 0.0001
         },
-        "find-anomalies": {
+        "find_anomalies": {
           "rank": ["CE-8", "CE-1", "CE-2", "CE-4", "CE-5"],
           "significance": [
             ["CE-8", "CE-1"],

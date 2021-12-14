@@ -128,7 +128,7 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["locate", "retrieve-value", "find-maximum", "compare-objects"],
+  "Tasks": ["locate", "retrieve_value", "find_maximum", "compare_objects"],
   "Results": {
     "Experiment": {
       "accuracy": {
@@ -136,15 +136,15 @@
           "rank": ["CE-3", "CE-4", "CE-2", "CE-1"],
           "significance": []
         },
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
           "significance": []
         },
-        "find-maximum": {
+        "find_maximum": {
           "rank": [["CE-2", "CE-4"], "CE-3", "CE-1"],
           "significance": []
         },
-        "compare-objects": {
+        "compare_objects": {
           "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
           "significance": []
         }
@@ -158,7 +158,7 @@
           ],
           "pvalue": 0.001
         },
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
           "significance": [
             ["CE-4", "CE-2"],
@@ -166,7 +166,7 @@
           ],
           "pvalue": 0.001
         },
-        "find-maximum": {
+        "find_maximum": {
           "rank": ["CE-4", "CE-2", "CE-3", "CE-1"],
           "significance": [
             ["CE-4", "CE-2"],
@@ -174,7 +174,7 @@
           ],
           "pvalue": 0.008
         },
-        "compare-objects": {
+        "compare_objects": {
           "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-4", "CE-2"],
@@ -183,7 +183,7 @@
           "pvalue": 0.001
         }
       },
-      "user-preference": {
+      "user_preference": {
         "overall": {
           "rank": ["CE-4", "CE-3", "CE-2", "CE-1"],
           "significance": [

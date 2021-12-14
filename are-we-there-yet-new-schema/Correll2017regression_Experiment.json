@@ -81,11 +81,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["estimate-trend"],
+  "Tasks": ["estimate_trend"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": [["CE-2", "CE-1"], "CE-3"],
           "significance": [
             ["CE-2", "CE-3"],

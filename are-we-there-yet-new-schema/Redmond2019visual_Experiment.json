@@ -44,11 +44,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["characterize-distribution"],
+  "Tasks": ["characterize_distribution"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "characterize-distribution": {
+        "characterize_distribution": {
           "rank": ["CE-2", "CE-1"],
           "significance": [["CE-2", "CE-1"]],
           "pvalue": 0.05

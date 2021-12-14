@@ -44,16 +44,16 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["retrieve-value", "estimate-difference"],
+  "Tasks": ["retrieve_value", "estimate_difference"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": ["CE-1", "CE-2"],
           "significance": [["CE-1", "CE-2"]],
           "pvalue": 0.009
         },
-        "estimate-difference": {
+        "estimate_difference": {
           "rank": ["CE-1", "CE-2"],
           "significance": [["CE-1", "CE-2"]],
           "pvalue": 0.001

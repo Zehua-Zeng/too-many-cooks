@@ -86,11 +86,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["compare-derived-values"],
+  "Tasks": ["compare_derived_values"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": ["CE-3", ["CE-1", "CE-2"]],
           "significance": [
             ["CE-3", "CE-1"],

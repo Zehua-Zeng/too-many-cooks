@@ -218,11 +218,11 @@
       }
     }
   },
-  "Tasks": ["retrieve-value", "cluster", "find-anomalies", "estimate-trend"],
+  "Tasks": ["retrieve_value", "cluster", "find_anomalies", "estimate_trend"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": [["CE-1", "CE-2", "CE-3"]],
           "significance": []
         },
@@ -235,7 +235,7 @@
           ],
           "pvalue": 0.001
         },
-        "find-anomalies": {
+        "find_anomalies": {
           "rank": ["CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-1"],
@@ -244,7 +244,7 @@
           ],
           "pvalue": 0.001
         },
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": ["CE-3", ["CE-1", "CE-2"]],
           "significance": [
             ["CE-3", "CE-1"],
@@ -254,7 +254,7 @@
         }
       },
       "time": {
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": ["CE-2", "CE-3", "CE-1"],
           "significance": [
             ["CE-2", "CE-3"],
@@ -271,7 +271,7 @@
           ],
           "pvalue": 0.001
         },
-        "find-anomalies": {
+        "find_anomalies": {
           "rank": [["CE-3", "CE-1"], "CE-2"],
           "significance": [
             ["CE-1", "CE-2"],
@@ -279,7 +279,7 @@
           ],
           "pvalue": 0.001
         },
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": ["CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-1"],

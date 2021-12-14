@@ -181,11 +181,11 @@
   "Tasks": [
     "locate",
     "recognize",
-    "compare-objects",
+    "compare_objects",
     "sort",
-    "estimate-trend",
-    "explore-adjacency",
-    "compute-derived-value"
+    "estimate_trend",
+    "explore_adjacency",
+    "compute_derived_value"
   ],
   "Results": {
     "Experiment": {
@@ -207,7 +207,7 @@
           "significance": [["CE-3", "CE-1"]],
           "pvalue": 0.001
         },
-        "compare-objects": {
+        "compare_objects": {
           "rank": [["CE-1", "CE-3", "CE-4"], "CE-2"],
           "significance": [
             ["CE-1", "CE-2"],
@@ -228,7 +228,7 @@
           ],
           "pvalue": 0.001
         },
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": ["CE-1", "CE-4", "CE-2"],
           "significance": [
             ["CE-1", "CE-4"],
@@ -237,7 +237,7 @@
           ],
           "pvalue": 0.001
         },
-        "explore-adjacency": {
+        "explore_adjacency": {
           "rank": ["CE-2", "CE-1", "CE-4", "CE-3"],
           "significance": [
             ["CE-1", "CE-3"],
@@ -247,7 +247,7 @@
           ],
           "pvalue": 0.001
         },
-        "compute-derived-value": {
+        "compute_derived_value": {
           "rank": ["CE-4", "CE-3", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-2"],
@@ -270,7 +270,7 @@
           "rank": [["CE-1", "CE-3"]],
           "significance": []
         },
-        "compare-objects": {
+        "compare_objects": {
           "rank": [["CE-1", "CE-3", "CE-4"], "CE-2"],
           "significance": [
             ["CE-1", "CE-2"],
@@ -283,15 +283,15 @@
           "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],
           "significance": []
         },
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": [["CE-1", "CE-2", "CE-4"]],
           "significance": []
         },
-        "explore-adjacency": {
+        "explore_adjacency": {
           "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],
           "significance": []
         },
-        "compute-derived-value": {
+        "compute_derived_value": {
           "rank": [["CE-1", "CE-2", "CE-3", "CE-4"]],
           "significance": []
         }

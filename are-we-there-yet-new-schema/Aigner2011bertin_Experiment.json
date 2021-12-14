@@ -155,20 +155,20 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["find-extremum", "estimate-trend", "compare-derived-values"],
+  "Tasks": ["find_extremum", "estimate_trend", "compare_derived_values"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "estimate-trend-1": {
+        "estimate_trend-1": {
           "rank": ["CE-2", "CE-1"],
           "significance": []
         },
-        "estimate-trend-2": {
+        "estimate_trend-2": {
           "rank": ["CE-3", "CE-2"],
           "significance": [["CE-3", "CE-2"]],
           "pvalue": 0.001
         },
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": ["CE-3", "CE-2", "CE-1"],
           "significance": [
             ["CE-3", "CE-1"],
@@ -190,17 +190,17 @@
         }
       },
       "time": {
-        "estimate-trend-1": {
+        "estimate_trend-1": {
           "rank": ["CE-2", "CE-1"],
           "significance": [["CE-2", "CE-1"]],
           "pvalue": 0.001
         },
-        "estimate-trend-2": {
+        "estimate_trend-2": {
           "rank": ["CE-3", "CE-2"],
           "significance": [["CE-3", "CE-2"]],
           "pvalue": 0.001
         },
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": ["CE-3", "CE-2", "CE-1"],
           "significance": [
             ["CE-3", "CE-1"],

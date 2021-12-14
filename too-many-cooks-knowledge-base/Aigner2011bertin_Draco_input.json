@@ -1,1162 +1,1165 @@
-[
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
+{
+  "data": [
+    {
+      "fields": [
         {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
-              }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
+          "name": "n",
+          "type": "string"
         },
         {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
+          "name": "q",
+          "type": "number"
         },
         {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
-            }
-          },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "accuracy",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
                 }
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
-          }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
               }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
                 }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "row": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
               }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
                 }
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
           }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
+        ]
       },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "overall",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
-              }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "accuracy",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
                 }
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "row": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "overall",
-    "metric": "accuracy",
-    "positive": {
-      "layer": [
-        {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
               }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
                 }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
-          }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "time",
-    "positive": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
-          }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "row": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "time",
-    "positive": {
-      "layer": [
-        {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
               }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
                 }
               }
-            }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
           }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
+        ]
       },
-      {
-        "name": "q",
-        "type": "number"
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
       },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "time",
-    "positive": {
-      "layer": [
+      "p-value": 0.01
+    },
+    {
+      "fields": [
         {
-          "params": [
-            {
-              "name": "index",
-              "select": {
-                "type": "point",
-                "encodings": [
-                  "x"
-                ],
-                "on": "mouseover",
-                "nearest": true
-              }
-            }
-          ],
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "opacity": {
-              "value": 0
-            }
-          }
+          "name": "n",
+          "type": "string"
         },
         {
-          "transform": [
-            {
-              "lookup": "n",
-              "from": {
-                "param": "index",
-                "key": "n"
-              }
-            },
-            {
-              "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
-              "as": "indexed_q"
-            }
-          ],
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "y": {
-              "field": "indexed_q",
-              "type": "quantitative",
-              "axis": {
-                "format": "%"
-              }
-            },
-            "color": {
-              "field": "n",
-              "type": "nominal"
-            }
-          }
+          "name": "q",
+          "type": "number"
         },
         {
-          "transform": [
-            {
-              "filter": {
-                "param": "index"
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "accuracy",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
+                }
               }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "field": "t",
-              "type": "temporal",
-              "axis": null
-            },
-            "color": {
-              "value": "firebrick"
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
+              }
             }
           },
-          "layer": [
-            {
-              "mark": {
-                "type": "rule",
-                "strokeWidth": 0.5
-              }
-            },
-            {
-              "mark": {
-                "type": "text",
-                "align": "center",
-                "fontWeight": 100
-              },
-              "encoding": {
-                "text": {
-                  "field": "t",
-                  "timeUnit": "yearmonth"
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
                 }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
+              }
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
               }
             }
-          ]
-        }
-      ]
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "row": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
-      },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "time",
-    "positive": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
+                }
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
           }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "row": {
-          "field": "n",
-          "type": "nominal"
-        }
-      }
-    },
-    "p-value": 0.01
-  },
-  {
-    "fields": [
-      {
-        "name": "n",
-        "type": "string"
+        ]
       },
-      {
-        "name": "q",
-        "type": "number"
-      },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "overall",
-    "metric": "time",
-    "positive": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "type": "log"
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
           }
-        },
-        "color": {
-          "field": "n",
-          "type": "nominal"
         }
-      }
+      },
+      "p-value": 0.01
     },
-    "negative": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
         },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
+        {
+          "name": "q",
+          "type": "number"
         },
-        "row": {
-          "field": "n",
-          "type": "nominal"
+        {
+          "name": "t",
+          "type": "number"
         }
-      }
+      ],
+      "task": "overall",
+      "metric": "accuracy",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
+                }
+              }
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
+                }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
+              }
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
+                }
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.01
     },
-    "p-value": 0.01
-  }
-]
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "overall",
+      "metric": "accuracy",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
+                }
+              }
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
+                }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
+              }
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
+                }
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.01
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "time",
+      "positive": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "time",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
+                }
+              }
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
+                }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
+              }
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
+                }
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "time",
+      "positive": {
+        "layer": [
+          {
+            "params": [
+              {
+                "name": "index",
+                "select": {
+                  "type": "point",
+                  "encodings": [
+                    "x"
+                  ],
+                  "on": "mouseover",
+                  "nearest": true
+                }
+              }
+            ],
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "opacity": {
+                "value": 0
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "lookup": "n",
+                "from": {
+                  "param": "index",
+                  "key": "n"
+                }
+              },
+              {
+                "calculate": "datum.index && datum.index.q > 0 ? (datum.q - datum.index.q)/datum.index.q : 0",
+                "as": "indexed_q"
+              }
+            ],
+            "mark": "line",
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "y": {
+                "field": "indexed_q",
+                "type": "quantitative",
+                "axis": {
+                  "format": "%"
+                }
+              },
+              "color": {
+                "field": "n",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "transform": [
+              {
+                "filter": {
+                  "param": "index"
+                }
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "t",
+                "type": "temporal",
+                "axis": null
+              },
+              "color": {
+                "value": "firebrick"
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "rule",
+                  "strokeWidth": 0.5
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontWeight": 100
+                },
+                "encoding": {
+                  "text": {
+                    "field": "t",
+                    "timeUnit": "yearmonth"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.01
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "time",
+      "positive": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.01
+    },
+    {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "overall",
+      "metric": "time",
+      "positive": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "type": "log"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "negative": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      },
+      "p-value": 0.01
+    }
+  ],
+  "source": "Aigner2011bertin"
+}

@@ -1,84 +1,87 @@
-[
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
+{
+  "data": [
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        },
+        {
+          "name": "t",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "accuracy",
+      "positive": {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
       },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
+      "negative": {
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
         }
-      }
-    },
-    "negative": {
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
-    },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
       },
-      {
-        "name": "t",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "point",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
-        }
-      }
+      "p-value": 0.05
     },
-    "negative": {
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "field": "t",
-          "type": "temporal"
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
         },
-        "y": {
-          "field": "q",
-          "type": "quantitative"
+        {
+          "name": "t",
+          "type": "number"
         }
-      }
-    },
-    "p-value": 0.05
-  }
-]
+      ],
+      "task": "estimate_trend",
+      "metric": "accuracy",
+      "positive": {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      },
+      "negative": {
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      },
+      "p-value": 0.05
+    }
+  ],
+  "source": "Correll2017regression"
+}

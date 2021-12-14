@@ -530,11 +530,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["retrieve-value"],
+  "Tasks": ["retrieve_value"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "retrieve-value-1": {
+        "retrieve_value-1": {
           "rank": [["CE-1", "CE-2"], ["CE-3", "CE-4"], "CE-6", "CE-5"],
           "significance": [
             ["CE-1", "CE-3"],
@@ -553,7 +553,7 @@
           ],
           "pvalue": 0.005
         },
-        "retrieve-value-2": {
+        "retrieve_value-2": {
           "rank": [
             ["CE-1", "CE-2"],
             ["CE-3", "CE-4", "CE-5", "CE-6"]
@@ -570,14 +570,14 @@
           ],
           "pvalue": 0.001
         },
-        "retrieve-value-4": {
+        "retrieve_value-4": {
           "rank": [["CE-11", "CE-12"], "CE-13", "CE-14"],
           "significance": [["CE-13", "CE-14"]],
           "pvalue": 0.007
         }
       },
       "time": {
-        "retrieve-value-1": {
+        "retrieve_value-1": {
           "rank": ["CE-2", "CE-1", "CE-4", "CE-3", "CE-6", "CE-5"],
           "significance": [
             ["CE-2", "CE-1"],
@@ -594,7 +594,7 @@
           ],
           "pvalue": 0.0001
         },
-        "retrieve-value-2": {
+        "retrieve_value-2": {
           "rank": ["CE-2", "CE-1", "CE-4", "CE-3", "CE-6", "CE-5"],
           "significance": [
             ["CE-2", "CE-1"],
@@ -611,7 +611,7 @@
           ],
           "pvalue": 0.001
         },
-        "retrieve-value-3": {
+        "retrieve_value-3": {
           "rank": ["CE-9", "CE-10", ["CE-3", "CE-4"], "CE-7", "CE-8"],
           "significance": [
             ["CE-9", "CE-10"],
@@ -631,7 +631,7 @@
           ],
           "pvalue": 0.001
         },
-        "retrieve-value-4": {
+        "retrieve_value-4": {
           "rank": [
             ["CE-13", "CE-14"],
             ["CE-11", "CE-12"]

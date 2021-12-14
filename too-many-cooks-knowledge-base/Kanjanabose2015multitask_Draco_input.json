@@ -1,3582 +1,3585 @@
-[
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "cluster",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
+{
+  "data": [
+    {
+      "fields": [
         {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
+          "name": "o",
+          "type": "number"
         },
         {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
+          "name": "q1",
+          "type": "number"
         },
         {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
+          "name": "q2",
+          "type": "number"
         },
         {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
+      "task": "cluster",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "count",
+                "as": "index"
+              }
+            ]
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
+              },
+              {
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
             },
-            "x": {
-              "field": "key"
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
+              },
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
+                "type": "quantitative",
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
             }
           }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "cluster",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q2"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
               },
-              {
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
     },
-    "negative": {
-      "hconcat": [
+    {
+      "fields": [
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "q1",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "cluster",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
+          "name": "q2",
+          "type": "number"
         },
         {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
+          "name": "q3",
+          "type": "number"
         },
         {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
+      "task": "cluster",
+      "metric": "accuracy",
+      "positive": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
             }
           }
-        },
-        {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
-              },
-              {
-                "type": "quantitative",
-                "field": "q2"
-              },
-              {
-                "type": "quantitative",
-                "field": "q3"
-              },
-              {
-                "type": "quantitative",
-                "field": "q4"
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "cluster",
-    "metric": "accuracy",
-    "positive": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "find-anomalies",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "find_anomalies",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
+              },
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q2"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "find_anomalies",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q3"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
     },
-    "negative": {
-      "hconcat": [
+    {
+      "fields": [
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "q1",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "find-anomalies",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
+          "name": "q2",
+          "type": "number"
         },
         {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
+          "name": "q3",
+          "type": "number"
         },
         {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
+      "task": "find_anomalies",
+      "metric": "accuracy",
+      "positive": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
             }
           }
-        },
-        {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
-              },
-              {
-                "type": "quantitative",
-                "field": "q2"
-              },
-              {
-                "type": "quantitative",
-                "field": "q3"
-              },
-              {
-                "type": "quantitative",
-                "field": "q4"
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "find-anomalies",
-    "metric": "accuracy",
-    "positive": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
+              },
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q2"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "accuracy",
+      "positive": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q3"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
     },
-    "negative": {
-      "hconcat": [
+    {
+      "fields": [
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "q1",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "accuracy",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
+          "name": "q2",
+          "type": "number"
         },
         {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
+          "name": "q3",
+          "type": "number"
         },
         {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
-          },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
-            }
-          }
-        },
-        {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+      "task": "retrieve_value",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
-              },
-              {
-                "type": "quantitative",
-                "field": "q2"
-              },
-              {
-                "type": "quantitative",
-                "field": "q3"
-              },
-              {
-                "type": "quantitative",
-                "field": "q4"
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
+              },
+              {
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
+              },
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
+                "type": "quantitative",
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
-              },
-              {
-                "type": "quantitative",
-                "field": "q2"
-              },
-              {
-                "type": "quantitative",
-                "field": "q3"
-              },
-              {
-                "type": "quantitative",
-                "field": "q4"
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q2"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
               },
-              {
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "cluster",
+      "metric": "time",
+      "positive": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "cluster",
-    "metric": "time",
-    "positive": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "cluster",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "cluster",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q2"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
               },
-              {
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "find-anomalies",
-    "metric": "time",
-    "positive": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "find-anomalies",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
-              {
-                "type": "quantitative",
-                "field": "q1"
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "find_anomalies",
+      "metric": "time",
+      "positive": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
               },
-              {
-                "type": "quantitative",
-                "field": "q2"
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
               },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q4"
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
-        },
-        {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
-        },
-        {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
-        }
-      ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
-            },
-            "x": {
-              "field": "key"
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
           }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "find_anomalies",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q2"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
               },
-              {
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
     },
-    "negative": {
-      "hconcat": [
+    {
+      "fields": [
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
+          "name": "q1",
+          "type": "number"
         },
         {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
-      },
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "time",
-    "positive": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "count",
-              "as": "index"
-            }
-          ]
+          "name": "q2",
+          "type": "number"
         },
         {
-          "fold": [
-            "q1",
-            "q2",
-            "q3",
-            "q4"
-          ]
+          "name": "q3",
+          "type": "number"
         },
         {
-          "joinaggregate": [
-            {
-              "op": "min",
-              "field": "value",
-              "as": "min"
-            },
-            {
-              "op": "max",
-              "field": "value",
-              "as": "max"
-            }
-          ],
-          "groupby": [
-            "key"
-          ]
-        },
-        {
-          "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
-          "as": "norm_val"
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "layer": [
-        {
-          "mark": {
-            "type": "rule",
-            "color": "#ccc"
+      "task": "estimate_trend",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "count",
+                "as": "index"
+              }
+            ]
           },
-          "encoding": {
-            "detail": {
-              "aggregate": "count"
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
+              },
+              {
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
             },
-            "x": {
-              "field": "key"
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
+              },
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
+              },
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
+                "type": "quantitative",
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
             }
           }
+        ]
+      },
+      "negative": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
         },
         {
-          "mark": "line",
-          "encoding": {
-            "color": {
-              "type": "nominal",
-              "field": "o"
-            },
-            "detail": {
-              "type": "nominal",
-              "field": "index"
-            },
-            "opacity": {
-              "value": 0.3
-            },
-            "x": {
-              "type": "nominal",
-              "field": "key"
-            },
-            "y": {
-              "type": "quantitative",
-              "field": "norm_val",
-              "axis": null
-            },
-            "tooltip": [
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
+        }
+      ],
+      "task": "estimate_trend",
+      "metric": "time",
+      "positive": {
+        "transform": [
+          {
+            "window": [
               {
-                "type": "quantitative",
-                "field": "q1"
+                "op": "count",
+                "as": "index"
+              }
+            ]
+          },
+          {
+            "fold": [
+              "q1",
+              "q2",
+              "q3",
+              "q4"
+            ]
+          },
+          {
+            "joinaggregate": [
+              {
+                "op": "min",
+                "field": "value",
+                "as": "min"
               },
               {
-                "type": "quantitative",
-                "field": "q2"
+                "op": "max",
+                "field": "value",
+                "as": "max"
+              }
+            ],
+            "groupby": [
+              "key"
+            ]
+          },
+          {
+            "calculate": "(datum.value - datum.min) / (datum.max - datum.min)",
+            "as": "norm_val"
+          }
+        ],
+        "layer": [
+          {
+            "mark": {
+              "type": "rule",
+              "color": "#ccc"
+            },
+            "encoding": {
+              "detail": {
+                "aggregate": "count"
               },
-              {
-                "type": "quantitative",
-                "field": "q3"
+              "x": {
+                "field": "key"
+              }
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "type": "nominal",
+                "field": "o"
               },
-              {
+              "detail": {
+                "type": "nominal",
+                "field": "index"
+              },
+              "opacity": {
+                "value": 0.3
+              },
+              "x": {
+                "type": "nominal",
+                "field": "key"
+              },
+              "y": {
                 "type": "quantitative",
-                "field": "q4"
+                "field": "norm_val",
+                "axis": null
+              },
+              "tooltip": [
+                {
+                  "type": "quantitative",
+                  "field": "q1"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q2"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q3"
+                },
+                {
+                  "type": "quantitative",
+                  "field": "q4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
               }
             ]
           }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
             }
-          ]
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
+      },
+      "p-value": 0.001
+    },
+    {
+      "fields": [
+        {
+          "name": "o",
+          "type": "number"
+        },
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number"
+        },
+        {
+          "name": "q4",
+          "type": "number"
         }
       ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
+      "task": "estimate_trend",
+      "metric": "time",
+      "positive": {
+        "hconcat": [
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q2",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q3",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "encoding": {
+              "x": {
+                "field": "q4",
+                "type": "quantitative"
+              },
+              "y": {
+                "field": "q1",
+                "type": "quantitative"
+              },
+              "shape": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "o",
+                "type": "nominal"
+              }
             }
           }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  },
-  {
-    "fields": [
-      {
-        "name": "o",
-        "type": "number"
+        ]
       },
-      {
-        "name": "q1",
-        "type": "number"
+      "negative": {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "row_number",
+                "as": "row_number"
+              }
+            ]
+          }
+        ],
+        "hconcat": [
+          {
+            "title": "o",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "o",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q1",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q1",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q2",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q2",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q3",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q3",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          },
+          {
+            "title": "q4",
+            "mark": "text",
+            "encoding": {
+              "text": {
+                "field": "q4",
+                "type": "nominal"
+              },
+              "y": {
+                "field": "row_number",
+                "type": "ordinal",
+                "axis": null
+              }
+            }
+          }
+        ]
       },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      },
-      {
-        "name": "q4",
-        "type": "number"
-      }
-    ],
-    "task": "estimate-trend",
-    "metric": "time",
-    "positive": {
-      "hconcat": [
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q2",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q3",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        },
-        {
-          "mark": "point",
-          "encoding": {
-            "x": {
-              "field": "q4",
-              "type": "quantitative"
-            },
-            "y": {
-              "field": "q1",
-              "type": "quantitative"
-            },
-            "shape": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "color": {
-              "field": "o",
-              "type": "nominal"
-            }
-          }
-        }
-      ]
-    },
-    "negative": {
-      "transform": [
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "as": "row_number"
-            }
-          ]
-        }
-      ],
-      "hconcat": [
-        {
-          "title": "o",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "o",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q1",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q1",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q2",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q2",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q3",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q3",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        },
-        {
-          "title": "q4",
-          "mark": "text",
-          "encoding": {
-            "text": {
-              "field": "q4",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "row_number",
-              "type": "ordinal",
-              "axis": null
-            }
-          }
-        }
-      ]
-    },
-    "p-value": 0.001
-  }
-]
+      "p-value": 0.001
+    }
+  ],
+  "source": "Kanjanabose2015multitask"
+}

@@ -137,7 +137,7 @@
   "Results": {
     "Experiment": {
       "accuracy": {
-        "retrieve-value-1": {
+        "retrieve_value-1": {
           "rank": [
             ["CE-3", "CE-4"],
             ["CE-1", "CE-2"]
@@ -150,12 +150,12 @@
           ],
           "pvalue": 0.005
         },
-        "retrieve-value-2": {
+        "retrieve_value-2": {
           "rank": ["CE-1", "CE-5"],
           "significance": [["CE-1", "CE-5"]],
           "pvalue": 0.001
         },
-        "retrieve-value-3": {
+        "retrieve_value-3": {
           "rank": ["CE-3", "CE-4", "CE-1", "CE-2"],
           "significance": [
             ["CE-3", "CE-1"],
@@ -165,7 +165,7 @@
           ],
           "pvalue": 0.001
         },
-        "retrieve-value-4": {
+        "retrieve_value-4": {
           "rank": [
             ["CE-2", "CE-4"],
             ["CE-1", "CE-3"]
@@ -180,7 +180,7 @@
         }
       },
       "time": {
-        "retrieve-value-5": {
+        "retrieve_value-5": {
           "rank": ["CE-1", "CE-4", "CE-3", "CE-2", "CE-5"],
           "significance": [["CE-1", "CE-5"]],
           "pvalue": 0.05

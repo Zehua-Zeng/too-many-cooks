@@ -401,11 +401,11 @@
       }
     }
   },
-  "Tasks": ["retrieve-value", "sort", "find-maximum", "compare-derived-values"],
+  "Tasks": ["retrieve_value", "sort", "find_maximum", "compare_derived_values"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": [
             ["CE-2", "CE-1", "CE-6", "CE-5", "CE-3", "CE-12", "CE-11"],
             "CE-4",
@@ -500,7 +500,7 @@
           ],
           "pvalue": 0.05
         },
-        "find-maximum": {
+        "find_maximum": {
           "rank": [
             ["CE-2", "CE-1", "CE-3", "CE-4", "CE-7", "CE-8", "CE-11"],
             "CE-12",
@@ -553,7 +553,7 @@
           ],
           "pvalue": 0.05
         },
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": [
             [
               "CE-2",
@@ -667,7 +667,7 @@
         }
       },
       "time": {
-        "retrieve-value": {
+        "retrieve_value": {
           "rank": [
             ["CE-2", "CE-1", "CE-6", "CE-5"],
             "CE-3",
@@ -783,7 +783,7 @@
           ],
           "pvalue": 0.05
         },
-        "find-maximum": {
+        "find_maximum": {
           "rank": [
             ["CE-2", "CE-1", "CE-3", "CE-4", "CE-7", "CE-8"],
             ["CE-11", "CE-12", "CE-6", "CE-5", "CE-9", "CE-10"]
@@ -828,7 +828,7 @@
           ],
           "pvalue": 0.05
         },
-        "compare-derived-values": {
+        "compare_derived_values": {
           "rank": [
             [
               "CE-2",

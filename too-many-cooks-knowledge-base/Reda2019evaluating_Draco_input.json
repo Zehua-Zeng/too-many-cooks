@@ -1,132 +1,135 @@
-[
-  {
-    "fields": [
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "JND",
-    "positive": {
-      "mark": {
-        "type": "point",
-        "filled": true
-      },
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
+{
+  "data": [
+    {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
         },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
+        {
+          "name": "q2",
+          "type": "number"
         },
-        "color": {
-          "field": "q3",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "redblue"
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "JND",
+      "positive": {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "redblue"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": {
-        "type": "point",
-        "filled": true
       },
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
+      "negative": {
+        "mark": {
+          "type": "point",
+          "filled": true
         },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q3",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "viridis"
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "viridis"
+            }
           }
         }
-      }
+      },
+      "p-value": 0.05
     },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q1",
-        "type": "number"
-      },
-      {
-        "name": "q2",
-        "type": "number"
-      },
-      {
-        "name": "q3",
-        "type": "number"
-      }
-    ],
-    "task": "compare-derived-values",
-    "metric": "JND",
-    "positive": {
-      "mark": {
-        "type": "point",
-        "filled": true
-      },
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
+    {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
         },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
+        {
+          "name": "q2",
+          "type": "number"
         },
-        "color": {
-          "field": "q3",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "rainbow"
+        {
+          "name": "q3",
+          "type": "number"
+        }
+      ],
+      "task": "compare_derived_values",
+      "metric": "JND",
+      "positive": {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "rainbow"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": {
-        "type": "point",
-        "filled": true
       },
-      "encoding": {
-        "x": {
-          "field": "q1",
-          "type": "quantitative"
+      "negative": {
+        "mark": {
+          "type": "point",
+          "filled": true
         },
-        "y": {
-          "field": "q2",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q3",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "viridis"
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "viridis"
+            }
           }
         }
-      }
-    },
-    "p-value": 0.05
-  }
-]
+      },
+      "p-value": 0.05
+    }
+  ],
+  "source": "Reda2019evaluating"
+}

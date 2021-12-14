@@ -58,12 +58,10 @@ for fn in os.listdir(r_folder):
         fr = open(r_folder + fn, "r")
         read_json = json.load(fr)
         to_draco_data = to_draco(read_json)
+        draco_data_final = {}
+        draco_data_final["data"] = to_draco_data
+        draco_data_final["source"] = fn_short
 
         with open(w_folder + fn_short + "_Draco_input.json", "w", encoding="utf-8") as out:
-            json.dump(to_draco_data, out, indent = 2, ensure_ascii=False)
-
-
-
-# with open('./too-many-cooks-knowledge-base/Kim2018assessing_Draco_input.json', 'w', encoding="utf-8") as out:
-#     json.dump(to_draco_data, out, indent = 2, ensure_ascii=False)
+            json.dump(draco_data_final, out, indent = 2, ensure_ascii=False)
 

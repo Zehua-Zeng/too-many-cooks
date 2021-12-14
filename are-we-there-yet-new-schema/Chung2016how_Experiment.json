@@ -206,11 +206,11 @@
       }
     }
   },
-  "Tasks": ["estimate-trend", "find-extremum"],
+  "Tasks": ["estimate_trend", "find_extremum"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": ["CE-1", "CE-4", "CE-6", "CE-2", "CE-5", "CE-3", "CE-7"],
           "significance": [
             ["CE-1", "CE-2"],
@@ -228,7 +228,7 @@
           ],
           "pvalue": 0.05
         },
-        "find-extremum": {
+        "find_extremum": {
           "rank": ["CE-7", "CE-2", "CE-6", "CE-4", "CE-1", "CE-5", "CE-3"],
           "significance": [
             ["CE-7", "CE-6"],
@@ -252,7 +252,7 @@
         }
       },
       "time": {
-        "estimate-trend": {
+        "estimate_trend": {
           "rank": ["CE-2", "CE-5", "CE-1", "CE-4", "CE-3", "CE-6", "CE-7"],
           "significance": [
             ["CE-2", "CE-4"],
@@ -272,7 +272,7 @@
           ],
           "pvalue": 0.05
         },
-        "find-extremum": {
+        "find_extremum": {
           "rank": ["CE-1", "CE-5", "CE-4", "CE-3", "CE-2", "CE-6", "CE-7"],
           "significance": [
             ["CE-1", "CE-6"],

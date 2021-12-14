@@ -330,11 +330,11 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["retrieve-value", "compare-derived-values", "estimate-trend"],
+  "Tasks": ["retrieve_value", "compare_derived_values", "estimate_trend"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "find-maximum": {
+        "find_maximum": {
           "rank": [
             "CE-9",
             "CE-7",
@@ -358,7 +358,7 @@
           ],
           "pvalue": 0.05
         },
-        "compare-derived-values-1": {
+        "compare_derived_values-1": {
           "rank": [
             [
               "CE-1",
@@ -374,7 +374,7 @@
           ],
           "significance": []
         },
-        "compare-derived-values-2": {
+        "compare_derived_values-2": {
           "rank": [
             "CE-6",
             "CE-9",
@@ -403,14 +403,14 @@
           ],
           "pvalue": 0.05
         },
-        "estimate-trend-1": {
+        "estimate_trend-1": {
           "rank": [
             ["CE-1", "CE-2", "CE-3", "CE-4", "CE-5", "CE-7", "CE-8", "CE-9"],
             "CE-6"
           ],
           "significance": []
         },
-        "estimate-trend-2": {
+        "estimate_trend-2": {
           "rank": [
             "CE-6",
             "CE-7",

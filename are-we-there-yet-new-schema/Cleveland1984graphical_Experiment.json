@@ -110,16 +110,16 @@
     }
   },
   "Other Designs": {},
-  "Tasks": ["estimate-difference"],
+  "Tasks": ["estimate_difference"],
   "Results": {
     "Experiment": {
       "accuracy": {
-        "estimate-difference-1": {
+        "estimate_difference-1": {
           "rank": ["CE-1", "CE-2"],
           "significance": [["CE-1", "CE-2"]],
           "pvalue": 0.05
         },
-        "estimate-difference-2": {
+        "estimate_difference-2": {
           "rank": ["CE-1", "CE-3"],
           "significance": [["CE-1", "CE-3"]],
           "pvalue": 0.05

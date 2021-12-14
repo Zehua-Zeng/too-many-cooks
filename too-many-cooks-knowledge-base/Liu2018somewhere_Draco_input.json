@@ -1,217 +1,220 @@
-[
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "viridis"
+{
+  "data": [
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "accuracy",
+      "positive": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "viridis"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "blues"
+      },
+      "negative": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "blues"
+            }
           }
         }
-      }
+      },
+      "p-value": 0.05
     },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "viridis"
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "accuracy",
+      "positive": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "viridis"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "blueorange"
+      },
+      "negative": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "blueorange"
+            }
           }
         }
-      }
+      },
+      "p-value": 0.05
     },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "accuracy",
-    "positive": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "viridis"
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "accuracy",
+      "positive": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "viridis"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "turbo"
+      },
+      "negative": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "turbo"
+            }
           }
         }
-      }
+      },
+      "p-value": 0.05
     },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "time",
-    "positive": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "blues"
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "time",
+      "positive": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "blues"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "blueorange"
+      },
+      "negative": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "blueorange"
+            }
           }
         }
-      }
+      },
+      "p-value": 0.05
     },
-    "p-value": 0.05
-  },
-  {
-    "fields": [
-      {
-        "name": "q",
-        "type": "number"
-      }
-    ],
-    "task": "retrieve-value",
-    "metric": "time",
-    "positive": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "blues"
+    {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number"
+        }
+      ],
+      "task": "retrieve_value",
+      "metric": "time",
+      "positive": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "blues"
+            }
           }
         }
-      }
-    },
-    "negative": {
-      "mark": "rect",
-      "encoding": {
-        "x": {
-          "field": "q",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "q",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "turbo"
+      },
+      "negative": {
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "turbo"
+            }
           }
         }
-      }
-    },
-    "p-value": 0.05
-  }
-]
+      },
+      "p-value": 0.05
+    }
+  ],
+  "source": "Liu2018somewhere"
+}
