@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "draco-core": "^0.0.6",
+    "vega-cli": "^5.19.1",
+    "vega-lite": "^4.17.0"
+  },
+  "scripts": {
+    "vl2png": "vl2png",
+    "build": "yarn --cwd ./js build"
+  }
+}

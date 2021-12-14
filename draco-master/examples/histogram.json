@@ -1,0 +1,8 @@
+{
+  "data": {
+    "url": "data/cars.csv"
+  },
+  "encoding": [
+    {"channel": "x", "field": "horsepower", "bin": true}
+  ]
+}
