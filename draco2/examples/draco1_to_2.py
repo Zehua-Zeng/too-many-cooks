@@ -1,7 +1,7 @@
 from hashlib import new
 import json
 
-f_saket = open("kim2018_draco1.json")
+f_saket = open("saket2018_draco1.json")
 saket_data = json.load(f_saket)
 
 new_data = []
@@ -20,8 +20,11 @@ for pair in saket_data["data"]:
         for attr in field:
             if attr == "cardinality":
                 new_schema["data"].append("attribute(field,unqiue)," + field["name"] + "," + str(field[attr]) + ").")
-            if attr == "interesting":
+            elif attr == "interesting":
                 new_schema["data"].append("attribute(field,interesting)," + field["name"] + ",true).")
+            elif attr == "entropy":
+                entropy = round(field[attr] * 1000)
+                new_schema["data"].append("attribute(field,entropy)," + field["name"] + "," + str(entropy) + ").")
             else:
                 new_schema["data"].append("attribute(field," + attr + ")," + field["name"] + "," + str(field[attr]) + ").")
     
@@ -88,5 +91,5 @@ for pair in saket_data["data"]:
 #     for li in lists:
 #         data_col[li] = "\n".join(data_col[li])
 
-with open('kim2018_draco2.json', 'w') as out:
+with open('saket2018_draco2.json', 'w') as out:
     json.dump(new_data, out, indent = 2)
