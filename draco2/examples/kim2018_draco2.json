@@ -366,12 +366,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -1091,12 +1088,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -1391,12 +1385,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -1991,12 +1982,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -2291,12 +2279,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -2816,12 +2801,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -3266,12 +3248,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -3416,12 +3395,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -3866,12 +3842,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -4166,12 +4139,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -4616,12 +4586,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -4916,12 +4883,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -5691,12 +5655,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -5991,12 +5952,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -6066,12 +6024,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -6741,12 +6696,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -6891,12 +6843,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7041,12 +6990,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7191,12 +7137,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7266,12 +7209,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7416,12 +7356,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7641,12 +7578,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7716,12 +7650,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7791,12 +7722,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -7841,12 +7769,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -7866,12 +7791,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -8016,12 +7938,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -8241,12 +8160,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -8841,12 +8757,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -9216,12 +9129,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -9791,12 +9701,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -10091,12 +9998,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -10541,12 +10445,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -10841,12 +10742,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -11741,12 +11639,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -11966,12 +11861,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -12491,12 +12383,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -12716,12 +12605,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -13166,12 +13052,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -13466,12 +13349,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -13841,12 +13721,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -13991,12 +13868,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -14366,12 +14240,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -14666,12 +14537,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -14966,12 +14834,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -15266,12 +15131,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -15341,12 +15203,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -15941,12 +15800,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -16241,12 +16097,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -16541,12 +16394,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -16841,12 +16691,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -17141,12 +16988,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -17441,12 +17285,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -17741,12 +17582,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -18041,12 +17879,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -18491,12 +18326,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -18791,12 +18623,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -19241,12 +19070,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -19566,12 +19392,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -19716,12 +19539,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -19866,12 +19686,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -19941,12 +19758,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -20016,12 +19830,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -20091,12 +19902,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -20166,12 +19974,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -20516,12 +20321,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -20816,12 +20618,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -21266,12 +21065,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -21566,12 +21362,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -22016,12 +21809,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -22341,12 +22131,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -22916,12 +22703,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -23516,12 +23300,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -23816,12 +23597,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -24066,12 +23844,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -24216,12 +23991,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -24441,12 +24213,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -24591,12 +24360,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -24741,12 +24507,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -24966,12 +24729,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -25191,12 +24951,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -25616,12 +25373,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -25916,12 +25670,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -26291,12 +26042,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -26591,12 +26339,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -27116,12 +26861,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -27416,12 +27158,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -27716,12 +27455,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -28866,12 +28602,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -29466,12 +29199,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -29816,12 +29546,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -30041,12 +29768,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -30141,12 +29865,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -30216,12 +29937,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -30266,12 +29984,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -30441,12 +30156,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -30566,12 +30278,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -31916,12 +31625,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -32441,12 +32147,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -32666,12 +32369,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -32741,12 +32441,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -32966,12 +32663,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -33491,12 +33185,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -34091,12 +33782,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -34266,12 +33954,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -34641,12 +34326,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -35016,12 +34698,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -35316,12 +34995,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -35616,12 +35292,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -35991,12 +35664,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -36191,12 +35861,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -36441,12 +36108,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -37166,12 +36830,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -37466,12 +37127,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -37691,12 +37349,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -38241,12 +37896,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -38541,12 +38193,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -38916,12 +38565,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -38966,12 +38612,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -39041,12 +38684,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -39066,12 +38706,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -39216,12 +38853,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -39366,12 +39000,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -39791,12 +39422,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -40091,12 +39719,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -40466,12 +40091,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -40766,12 +40388,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -40991,12 +40610,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -41216,12 +40832,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -41591,12 +41204,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -41816,12 +41426,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -42791,12 +42398,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -43016,12 +42620,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -43541,12 +43142,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -43841,12 +43439,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -44216,12 +43811,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -44516,12 +44108,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -44816,12 +44405,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -45116,12 +44702,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -45416,12 +44999,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -45716,12 +45296,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46116,12 +45693,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -46241,12 +45815,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46316,12 +45887,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46466,12 +46034,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46541,12 +46106,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46691,12 +46253,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46766,12 +46325,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -46916,12 +46472,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -47291,12 +46844,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -47516,12 +47066,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -47591,12 +47138,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -47741,12 +47285,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -48191,12 +47732,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -48491,12 +48029,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -48791,12 +48326,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -49091,12 +48623,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -49616,12 +49145,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -49916,12 +49442,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -50216,12 +49739,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -51191,12 +50711,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -51441,12 +50958,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -51591,12 +51105,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -51741,12 +51252,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -51816,12 +51324,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -51966,12 +51471,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52116,12 +51618,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52266,12 +51765,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52491,12 +51987,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52566,12 +52059,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52716,12 +52206,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -52866,12 +52353,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -53216,12 +52700,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -53516,12 +52997,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -53966,12 +53444,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -54266,12 +53741,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -54566,12 +54038,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -55016,12 +54485,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -55116,12 +54582,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -55166,12 +54629,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -55191,12 +54651,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -55691,12 +55148,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -55991,12 +55445,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -56441,12 +55892,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -56741,12 +56189,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -56916,12 +56361,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57066,12 +56508,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57216,12 +56655,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57366,12 +56802,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57516,12 +56949,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57666,12 +57096,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57741,12 +57168,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -57966,12 +57390,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -58116,12 +57537,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -58266,12 +57684,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -58541,12 +57956,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -58841,12 +58253,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -59141,12 +58550,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -59441,12 +58847,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -59741,12 +59144,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60041,12 +59441,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60341,12 +59738,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60641,12 +60035,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60716,12 +60107,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60866,12 +60254,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -60941,12 +60326,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -61241,12 +60623,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -61416,12 +60795,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -61841,12 +61217,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -62216,12 +61589,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -62591,12 +61961,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -62766,12 +62133,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -62966,12 +62330,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -63266,12 +62627,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -63566,12 +62924,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -63866,12 +63221,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -64166,12 +63518,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -64466,12 +63815,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -64766,12 +64112,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -65066,12 +64409,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -65391,12 +64731,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -65541,12 +64878,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -65616,12 +64950,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -66191,12 +65522,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -66591,12 +65919,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -66791,12 +66116,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -66891,12 +66213,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67041,12 +66360,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67491,12 +66807,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67541,12 +66854,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -67641,12 +66951,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67691,12 +66998,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -67791,12 +67095,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67866,12 +67167,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -67916,12 +67214,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -67991,12 +67286,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -68016,12 +67308,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -68091,12 +67380,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -68166,12 +67452,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -68241,12 +67524,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -68666,12 +67946,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -68966,12 +68243,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -69341,12 +68615,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -69641,12 +68912,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -69941,12 +69209,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -70241,12 +69506,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -70566,12 +69828,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -70641,12 +69900,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -70716,12 +69972,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -71141,12 +70394,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -71366,12 +70616,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -71741,12 +70988,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -72041,12 +71285,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -72491,12 +71732,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -72791,12 +72029,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -73091,12 +72326,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -73391,12 +72623,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -73691,12 +72920,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -73991,12 +73217,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -74066,12 +73289,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -74516,12 +73736,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -74741,12 +73958,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -74891,12 +74105,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -75116,12 +74327,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -75266,12 +74474,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -75366,12 +74571,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -75566,12 +74768,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -75641,12 +74840,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -75941,12 +75137,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -76241,12 +75434,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -76541,12 +75731,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -76841,12 +76028,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -77141,12 +76325,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -77441,12 +76622,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -77741,12 +76919,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -78041,12 +77216,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -78491,12 +77663,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -78791,12 +77960,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -79241,12 +78407,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -79541,12 +78704,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -79716,12 +78876,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -79866,12 +79023,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -80016,12 +79170,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -80166,12 +79317,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -80516,12 +79664,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -80816,12 +79961,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -81191,12 +80333,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -81491,12 +80630,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -81866,12 +81002,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -82166,12 +81299,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -82416,12 +81546,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -82566,12 +81693,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -83016,12 +82140,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -83166,12 +82287,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -83391,12 +82509,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -83616,12 +82731,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -83666,12 +82778,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -83816,12 +82925,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -83841,12 +82947,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ]
   },
   {
@@ -84191,12 +83294,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -84491,12 +83591,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -84791,12 +83888,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -85091,12 +84185,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -85391,12 +84482,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -85691,12 +84779,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -85991,12 +85076,9 @@
       "attribute((scale,channel),s2,y).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",
@@ -86291,12 +85373,9 @@
       "attribute((scale,channel),s2,x).",
       "attribute((scale,type),s2,linear).",
       "attribute((scale,zero),s2,true).",
-      "entity(encoding,m,e3).",
-      "attribute((encoding,channel),e3,row).",
-      "attribute((encoding,field),e3,n).",
-      "entity(scale,v,s3).",
-      "attribute((scale,channel),s3,row).",
-      "attribute((scale,type),s3,ordinal)."
+      "entity(facet,v,f).",
+      "attribute((facet,channel),f,row).",
+      "attribute((facet,field),f,n)."
     ],
     "negative": [
       "entity(view,root,v).",

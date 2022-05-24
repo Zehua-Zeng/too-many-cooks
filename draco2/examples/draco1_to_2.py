@@ -57,6 +57,14 @@ for pair in saket_data["data"]:
         # encodings
         no = 1
         for channel in pair[vis]["encoding"]:
+            # facet
+            if channel == "row" or channel == "col":
+                new_schema[vis].append("entity(facet,v,f).")
+                new_schema[vis].append("attribute((facet,channel),f," + channel + ").")
+                new_schema[vis].append("attribute((facet,field),f," + pair[vis]["encoding"][channel]["field"] + ").")
+                continue
+
+            # normal encoding
             encoding_id = "e" + str(no)
             new_schema[vis].append("entity(encoding,m," + encoding_id + ").")
             new_schema[vis].append("attribute((encoding,channel)," + encoding_id + "," + channel + ").")
