@@ -1,0 +1,167 @@
+{
+  "Title": "Face to Face: Evaluating Visual Comparison",
+  "Category": "Experiment",
+  "Authors": "Brian Ondov, Nicole Jardine, Niklas Elmqvist",
+  "Link": "https://ieeexplore.ieee.org/document/8440856",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "y": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "row": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "y": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "col": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "row": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "n2",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["aggregate", "correlate"],
+  "Results": {
+    "Experimental": {
+      "JND": {
+        "aggregate-1": {
+          "rank": ["E-4", "E-3", "E-2", "E-1"],
+          "significance": [
+            ["E-4", "E-3"],
+            ["E-4", "E-2"],
+            ["E-4", "E-1"],
+            ["E-3", "E-1"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate-2": {
+          "rank": ["E-8", ["E-5", "E-6", "E-7"]],
+          "significance": [
+            ["E-8", "E-5"],
+            ["E-8", "E-6"],
+            ["E-8", "E-7"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate-3": {
+          "rank": ["E-11", "E-10", "E-9"],
+          "significance": []
+        },
+        "correlate": {
+          "rank": ["E-3", "E-4", "E-2", "E-1"],
+          "significance": [["E-3", "E-1"]]
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "Title": "Rethinking the Ranks of Visual Channels",
+  "Category": "Experiment",
+  "Authors": "Caitlyn M. McColeman, Fumeng Yang, Timothy F. Brady, Steven Franconeri",
+  "Link": "https://ieeexplore.ieee.org/document/9557878",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 4,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-6": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 4,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-7": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 4,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-8": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 4,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-9": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 6,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-10": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 6,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-11": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 6,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-12": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 6,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-13": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 8,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-14": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 8,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-15": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 8,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-16": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 8,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["retrieve-value"],
+  "Results": {
+    "Experimental": {
+      "bias": {
+        "retrieve-value-1": {
+          "rank": ["E-1", "E-3", "E-4", "E-2"],
+          "significance": [
+            ["E-1", "E-4"],
+            ["E-1", "E-2"],
+            ["E-3", "E-4"],
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-2": {
+          "rank": ["E-5", "E-7", "E-8", "E-6"],
+          "significance": [
+            ["E-5", "E-7"],
+            ["E-5", "E-8"],
+            ["E-5", "E-6"],
+            ["E-7", "E-8"],
+            ["E-7", "E-6"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-3": {
+          "rank": ["E-9", "E-11", "E-10", "E-12"],
+          "significance": [
+            ["E-9", "E-10"],
+            ["E-9", "E-12"],
+            ["E-11", "E-10"],
+            ["E-11", "E-12"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-4": {
+          "rank": ["E-13", "E-15", "E-14", "E-16"],
+          "significance": [
+            ["E-13", "E-14"],
+            ["E-13", "E-16"],
+            ["E-15", "E-16"]
+          ],
+          "pvalue": 0.1
+        }
+      },
+      "precision": {
+        "retrieve-value-1": {
+          "rank": ["E-4", "E-3", "E-1", "E-2"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-2"],
+            ["E-1", "E-2"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-2": {
+          "rank": ["E-8", "E-7", "E-5", "E-6"],
+          "significance": [
+            ["E-8", "E-6"],
+            ["E-7", "E-6"],
+            ["E-5", "E-6"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-3": {
+          "rank": ["E-12", "E-9", "E-11", "E-10"],
+          "significance": [
+            ["E-12", "E-11"],
+            ["E-12", "E-10"]
+          ],
+          "pvalue": 0.1
+        },
+        "retrieve-value-4": {
+          "rank": ["E-16", "E-13", "E-15", "E-14"],
+          "significance": [
+            ["E-16", "E-15"],
+            ["E-16", "E-14"]
+          ],
+          "pvalue": 0.1
+        }
+      },
+      "error": {
+        "retrieve-value-1": {
+          "rank": ["E-1", "E-3", "E-4", "E-2"],
+          "significance": [],
+          "pvalue": 0.1
+        },
+        "retrieve-value-2": {
+          "rank": ["E-5", "E-7", "E-8", "E-6"],
+          "significance": [],
+          "pvalue": 0.1
+        },
+        "retrieve-value-3": {
+          "rank": ["E-9", "E-11", "E-12", "E-10"],
+          "significance": [],
+          "pvalue": 0.1
+        },
+        "retrieve-value-4": {
+          "rank": ["E-13", "E-15", "E-16", "E-14"],
+          "significance": [],
+          "pvalue": 0.1
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

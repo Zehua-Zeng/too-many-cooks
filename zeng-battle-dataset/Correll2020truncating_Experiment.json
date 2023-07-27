@@ -1,0 +1,140 @@
+{
+  "Title": "Truncating the Y-Axis: Threat or Menace?",
+  "Authors": "Michael Correll, Enrico Bertini, Steven Franconeri",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["retrieve-value"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "retrieve-value-1": {
+          "rank": ["E-1", "E-2"],
+          "significance": [["E-1", "E-2"]]
+        },
+        "retrieve-value-2": {
+          "rank": ["E-3", "E-4"],
+          "significance": [["E-3", "E-4"]]
+        }
+      }
+    }
+  }
+}

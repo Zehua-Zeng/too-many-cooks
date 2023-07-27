@@ -1,0 +1,144 @@
+{
+  "Title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+  "Category": "Hybrid",
+  "Authors": "William S. Cleveland, Robert McGill",
+  "Link": "https://www.jstor.org/stable/2288400",
+  "Designs": {
+    "T-1": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-2": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-3": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-4": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-5": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "size": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-6": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort-1": {
+          "rank": [["T-1", "T-2"], ["T-3", "T-4"], "T-5", "T-6"],
+          "significance": [
+            ["T-1", "T-3"],
+            ["T-1", "T-4"],
+            ["T-1", "T-5"],
+            ["T-1", "T-6"],
+            ["T-2", "T-3"],
+            ["T-2", "T-4"],
+            ["T-2", "T-5"],
+            ["T-2", "T-6"],
+            ["T-3", "T-5"],
+            ["T-3", "T-6"],
+            ["T-4", "T-5"],
+            ["T-4", "T-6"],
+            ["T-5", "T-6"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

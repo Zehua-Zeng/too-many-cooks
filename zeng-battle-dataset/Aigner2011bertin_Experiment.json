@@ -1,0 +1,118 @@
+{
+  "Title": "Bertin was Right: An Empirical Evaluation of Indexing to Compare Multivariate Time-Series Data Using Line Plots",
+  "Authors": "Wolfgang Aigner, Chad Kainz, Ricky K. K. Ma, Silvia Miksch",
+  "Link": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2010.01845.x",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unqiue": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unqiue": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "log"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["correlate", "aggregate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "correlate": {
+          "rank": ["E-2", "E-1"],
+          "significance": []
+        },
+        "aggregate": {
+          "rank": ["E-2", "E-1"],
+          "significance": []
+        },
+        "overall": {
+          "rank": ["E-2", "E-1"],
+          "significance": []
+        }
+      },
+      "time": {
+        "correlate": {
+          "rank": ["E-2", "E-1"],
+          "significance": [["E-2", "E-1"]],
+          "pvalue": 0.001
+        },
+        "aggregate": {
+          "rank": ["E-2", "E-1"],
+          "significance": [["E-2", "E-1"]],
+          "pvalue": 0.01
+        },
+        "overall": {
+          "rank": ["E-2", "E-1"],
+          "significance": [["E-2", "E-1"]],
+          "pvalue": 0.01
+        }
+      }
+    }
+  }
+}

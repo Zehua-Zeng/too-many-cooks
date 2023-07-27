@@ -1,0 +1,109 @@
+{
+  "Title": "At a Glance: Pixel Approximate Entropy as a Measure of Line Chart Complexity",
+  "Authors": "Gabriel Ryan, Abigail Mosca, Remco Chang, Eugene Wu",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "entropy": 2500,
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "entropy": 7500,
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "entropy": 10000,
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["correlate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "correlate": {
+          "rank": ["E-1", "E-2", "E-3"],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-1", "E-3"],
+            ["E-2", "E-3"]
+          ]
+        }
+      }
+    }
+  }
+}

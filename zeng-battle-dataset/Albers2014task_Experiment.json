@@ -1,0 +1,245 @@
+{
+  "Title": "Task-driven Evaluation of Aggregation in Time Series Visualization",
+  "Category": "Experiment",
+  "Authors": "Danielle Albers, Michael Correll, Michael Gleicher",
+  "Link": "https://dl.acm.org/doi/10.1145/2556288.2557200",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "aggregate": "mean"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": [
+    "find-extremum",
+    "determine-range",
+    "aggregate",
+    "characterize-distribution",
+    "find-anomalies"
+  ],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "find-extremum-1": {
+          "rank": ["E-4", "E-2", "E-1", "E-3", "E-6", "E-8", "E-5", "E-7"],
+          "significance": [
+            ["E-4", "E-3"],
+            ["E-2", "E-3"],
+            ["E-1", "E-3"],
+            ["E-4", "E-6"],
+            ["E-2", "E-6"],
+            ["E-1", "E-6"],
+            ["E-4", "E-8"],
+            ["E-2", "E-8"],
+            ["E-1", "E-8"],
+            ["E-4", "E-5"],
+            ["E-2", "E-5"],
+            ["E-1", "E-5"],
+            ["E-4", "E-7"],
+            ["E-2", "E-7"],
+            ["E-1", "E-7"],
+            ["E-3", "E-8"],
+            ["E-3", "E-5"],
+            ["E-3", "E-7"],
+            ["E-6", "E-8"],
+            ["E-6", "E-5"],
+            ["E-6", "E-7"],
+            ["E-8", "E-7"],
+            ["E-5", "E-7"]
+          ],
+          "pvalue": 0.01
+        },
+        "find-extremum-2": {
+          "rank": ["E-2", "E-3", "E-4", "E-1", "E-6", "E-8", "E-5", "E-7"],
+          "significance": [
+            ["E-2", "E-1"],
+            ["E-3", "E-1"],
+            ["E-4", "E-1"],
+            ["E-2", "E-6"],
+            ["E-3", "E-6"],
+            ["E-4", "E-6"],
+            ["E-2", "E-8"],
+            ["E-3", "E-8"],
+            ["E-4", "E-8"],
+            ["E-2", "E-5"],
+            ["E-3", "E-5"],
+            ["E-4", "E-5"],
+            ["E-2", "E-7"],
+            ["E-3", "E-7"],
+            ["E-4", "E-7"],
+            ["E-1", "E-8"],
+            ["E-1", "E-5"],
+            ["E-1", "E-7"],
+            ["E-6", "E-8"],
+            ["E-6", "E-5"],
+            ["E-6", "E-7"],
+            ["E-8", "E-7"],
+            ["E-5", "E-7"]
+          ],
+          "pvalue": 0.01
+        },
+        "determine-range": {
+          "rank": ["E-2", "E-3", "E-4", "E-1", "E-6", "E-5", "E-8", "E-7"],
+          "significance": [
+            ["E-2", "E-4"],
+            ["E-2", "E-1"],
+            ["E-2", "E-6"],
+            ["E-2", "E-5"],
+            ["E-2", "E-8"],
+            ["E-2", "E-7"],
+            ["E-3", "E-4"],
+            ["E-3", "E-1"],
+            ["E-3", "E-6"],
+            ["E-3", "E-5"],
+            ["E-3", "E-8"],
+            ["E-3", "E-7"],
+            ["E-4", "E-6"],
+            ["E-4", "E-5"],
+            ["E-4", "E-8"],
+            ["E-4", "E-7"],
+            ["E-1", "E-6"],
+            ["E-1", "E-5"],
+            ["E-1", "E-8"],
+            ["E-1", "E-7"],
+            ["E-6", "E-5"],
+            ["E-6", "E-8"],
+            ["E-6", "E-7"],
+            ["E-5", "E-8"],
+            ["E-5", "E-7"]
+          ],
+          "pvalue": 0.01
+        },
+        "aggregate": {
+          "rank": ["E-4", "E-7", "E-6", "E-3", "E-5", "E-2", "E-8", "E-1"],
+          "significance": [
+            ["E-4", "E-6"],
+            ["E-4", "E-3"],
+            ["E-4", "E-5"],
+            ["E-4", "E-2"],
+            ["E-4", "E-8"],
+            ["E-4", "E-1"],
+            ["E-7", "E-6"],
+            ["E-7", "E-3"],
+            ["E-7", "E-5"],
+            ["E-7", "E-2"],
+            ["E-7", "E-8"],
+            ["E-7", "E-1"],
+            ["E-6", "E-5"],
+            ["E-6", "E-2"],
+            ["E-6", "E-8"],
+            ["E-6", "E-1"],
+            ["E-3", "E-5"],
+            ["E-3", "E-2"],
+            ["E-3", "E-8"],
+            ["E-3", "E-1"],
+            ["E-5", "E-1"]
+          ],
+          "pvalue": 0.01
+        },
+        "characterize-distribution": {
+          "rank": ["E-3", "E-5", "E-4", "E-1", "E-8", "E-2"],
+          "significance": [
+            ["E-3", "E-5"],
+            ["E-3", "E-4"],
+            ["E-3", "E-1"],
+            ["E-3", "E-8"],
+            ["E-3", "E-2"],
+            ["E-5", "E-8"],
+            ["E-5", "E-2"]
+          ],
+          "pvalue": 0.01
+        },
+        "find-anomalies": {
+          "rank": ["E-8", "E-1", "E-2", "E-4", "E-5"],
+          "significance": [
+            ["E-8", "E-1"],
+            ["E-8", "E-2"],
+            ["E-8", "E-4"],
+            ["E-8", "E-5"]
+          ],
+          "pvalue": 0.01
+        }
+      }
+    }
+  }
+}

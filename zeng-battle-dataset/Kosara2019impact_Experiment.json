@@ -1,0 +1,124 @@
+{
+  "Title": "The Impact of Distribution and Chart Type on Part-to-Whole Comparisons",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "size": {
+            "type": "quantitative",
+            "field": "q"
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort": {
+          "rank": [["E-4", "E-3", "E-2"], "E-1", "E-5"],
+          "significance": [
+            ["E-2", "E-1"],
+            ["E-1", "E-5"]
+          ]
+        }
+      },
+      "time": {
+        "sort": {
+          "rank": [
+            ["E-2", "E-3"],
+            ["E-4", "E-5", "E-1"]
+          ],
+          "significance": [
+            ["E-2", "E-4"],
+            ["E-2", "E-5"],
+            ["E-2", "E-1"],
+            ["E-3", "E-4"],
+            ["E-3", "E-5"],
+            ["E-3", "E-1"]
+          ]
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

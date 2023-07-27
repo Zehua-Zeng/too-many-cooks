@@ -1,0 +1,204 @@
+{
+  "Title": "Ranked-List Visualization: A Graphical Perception Study",
+  "Category": "Experiment",
+  "Authors": "Caitlyn M. McColeman, Fumeng Yang, Timothy F. Brady, Steven Franconeri",
+  "Link": "https://dl.acm.org/doi/10.1145/3290605.3300422",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-6": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort", "aggregate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort-1": {
+          "rank": ["E-3", ["E-2", "E-1"], ["E-4", "E-5", "E-6"]],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-3", "E-1"],
+            ["E-3", "E-4"],
+            ["E-3", "E-5"],
+            ["E-3", "E-6"],
+            ["E-2", "E-4"],
+            ["E-2", "E-5"],
+            ["E-2", "E-6"],
+            ["E-1", "E-4"],
+            ["E-1", "E-5"],
+            ["E-1", "E-6"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": [["E-3", "E-1"], "E-2", "E-4", "E-5", "E-6"],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-3", "E-4"],
+            ["E-3", "E-5"],
+            ["E-3", "E-6"],
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-1", "E-5"],
+            ["E-1", "E-6"],
+            ["E-2", "E-5"],
+            ["E-2", "E-6"],
+            ["E-6", "E-6"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate": {
+          "rank": [["E-1", "E-6"], "E-3", "E-5", "E-2", "E-4"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-5"],
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-6", "E-3"],
+            ["E-6", "E-5"],
+            ["E-6", "E-2"],
+            ["E-6", "E-4"],
+            ["E-3", "E-5"],
+            ["E-3", "E-2"],
+            ["E-3", "E-4"],
+            ["E-5", "E-2"],
+            ["E-5", "E-4"],
+            ["E-2", "E-4"]
+          ],
+          "pvalue": 0.05
+        }
+      },
+      "time": {
+        "sort-1": {
+          "rank": [
+            ["E-2", "E-4", "E-5", "E-6"],
+            ["E-3", "E-1"]
+          ],
+          "significance": [
+            ["E-2", "E-3"],
+            ["E-2", "E-1"],
+            ["E-4", "E-3"],
+            ["E-4", "E-1"],
+            ["E-5", "E-3"],
+            ["E-5", "E-1"],
+            ["E-6", "E-3"],
+            ["E-6", "E-1"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": ["E-6", ["E-5", "E-4", "E-3", "E-2"], "E-1"],
+          "significance": [
+            ["E-6", "E-5"],
+            ["E-6", "E-4"],
+            ["E-6", "E-3"],
+            ["E-6", "E-2"],
+            ["E-6", "E-1"],
+            ["E-5", "E-1"],
+            ["E-4", "E-1"],
+            ["E-3", "E-1"],
+            ["E-2", "E-1"],
+            ["E-1", "E-1"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate": {
+          "rank": ["E-6", ["E-2", "E-4"], ["E-3", "E-5"], "E-1"],
+          "significance": [
+            ["E-6", "E-3"],
+            ["E-6", "E-5"],
+            ["E-6", "E-1"],
+            ["E-2", "E-3"],
+            ["E-2", "E-1"],
+            ["E-4", "E-3"],
+            ["E-4", "E-1"],
+            ["E-3", "E-1"],
+            ["E-5", "E-1"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

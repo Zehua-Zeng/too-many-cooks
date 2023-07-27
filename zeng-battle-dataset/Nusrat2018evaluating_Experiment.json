@@ -1,0 +1,190 @@
+{
+  "Title": "Evaluating Cartogram Effectiveness",
+  "Category": "Experiment",
+  "Authors": "Caitlyn M. McColeman, Fumeng Yang, Timothy F. Brady, Steven Franconeri",
+  "Link": "https://ieeexplore.ieee.org/document/7792176",
+  "Designs": {
+    "E-2": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort", "correlate", "filter", "aggregate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "filter-1": {
+          "rank": ["E-1", "E-3", "E-4", "E-2"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-4"],
+            ["E-1", "E-2"],
+            ["E-3", "E-4"],
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "filter-2": {
+          "rank": ["E-3", "E-1"],
+          "significance": [["E-3", "E-1"]]
+        },
+        "sort-1": {
+          "rank": [["E-1", "E-3", "E-4"], "E-2"],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": ["E-1", "E-3", "E-4", "E-2"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-4"],
+            ["E-1", "E-2"],
+            ["E-3", "E-4"],
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "correlate": {
+          "rank": ["E-1", "E-4", "E-2"],
+          "significance": [
+            ["E-1", "E-4"],
+            ["E-1", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "filter-3": {
+          "rank": ["E-2", "E-1", "E-4", "E-3"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-2", "E-3"],
+            ["E-2", "E-4"],
+            ["E-4", "E-3"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate": {
+          "rank": ["E-4", "E-3", "E-1", "E-2"],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        }
+      },
+      "time": {
+        "filter-1": {
+          "rank": ["E-3", "E-1", "E-4", "E-2"],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-3", "E-4"],
+            ["E-1", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "filter-2": {
+          "rank": [["E-1", "E-3"]],
+          "significance": []
+        },
+        "sort-1": {
+          "rank": [["E-1", "E-3", "E-4"], "E-2"],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-3", "E-2"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": [["E-1", "E-2", "E-3", "E-4"]],
+          "significance": []
+        },
+        "correlate": {
+          "rank": [["E-1", "E-2", "E-4"]],
+          "significance": []
+        },
+        "filter-3": {
+          "rank": [["E-1", "E-2", "E-3", "E-4"]],
+          "significance": []
+        },
+        "aggregate": {
+          "rank": [["E-1", "E-2", "E-3", "E-4"]],
+          "significance": []
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

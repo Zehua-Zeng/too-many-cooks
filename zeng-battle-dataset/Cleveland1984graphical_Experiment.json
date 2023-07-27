@@ -1,0 +1,163 @@
+{
+  "Title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+  "Category": "Hybrid",
+  "Authors": "William S. Cleveland, Robert McGill",
+  "Link": "https://www.jstor.org/stable/2288400",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "col": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n2",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort-1": {
+          "rank": ["E-1", "E-2"],
+          "significance": [["E-1", "E-2"]],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": ["E-3", "E-4"],
+          "significance": [["E-3", "E-4"]],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

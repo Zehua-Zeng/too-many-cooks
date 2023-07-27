@@ -1,0 +1,234 @@
+{
+  "Title": "Graphical Perception of Multiple Time Series",
+  "Category": "Experiment",
+  "Authors": "Waqas Javed, Bryan McDonnel, Niklas Elmqvist",
+  "Link": "https://ieeexplore.ieee.org/document/5613429",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["find-extremum", "correlate", "aggregate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "find-extremum": {
+          "rank": ["E-2", ["E-1", "E-3", "E-4"]],
+          "significance": []
+        },
+        "correlate": {
+          "rank": [
+            ["E-1", "E-2"],
+            ["E-3", "E-4"]
+          ],
+          "significance": []
+        },
+        "aggregate": {
+          "rank": [["E-3", "E-4"], "E-2", "E-1"],
+          "significance": []
+        }
+      },
+      "time": {
+        "find-extremum": {
+          "rank": [["E-1", "E-2"], "E-3", "E-4"],
+          "significance": [
+            ["E-2", "E-3"],
+            ["E-1", "E-3"],
+            ["E-2", "E-4"],
+            ["E-1", "E-4"],
+            ["E-3", "E-4"]
+          ],
+          "pvalue": 0.05
+        },
+        "correlate": {
+          "rank": [
+            ["E-1", "E-3"],
+            ["E-2", "E-4"]
+          ],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-3", "E-2"],
+            ["E-3", "E-4"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate": {
+          "rank": [
+            ["E-3", "E-4"],
+            ["E-1", "E-2"]
+          ],
+          "significance": [
+            ["E-3", "E-1"],
+            ["E-3", "E-2"],
+            ["E-4", "E-1"],
+            ["E-4", "E-2"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

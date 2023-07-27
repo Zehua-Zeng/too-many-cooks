@@ -1,0 +1,138 @@
+{
+  "Title": "Rainbow Dash: Intuitiveness, interpretability and memorability of the rainbow color scheme in visualization",
+  "Category": "Experiment",
+  "Authors": "Izabela M. Golebiowska, Arzu Coltekin",
+  "Link": "https://ieeexplore.ieee.org/document/9249052",
+  "Designs": {
+    "E-2": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["find-extremum", "filter", "determine-range"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "find-extremum": {
+          "rank": [["E-3", "E-4"], "E-2", "E-1"],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-3", "E-1"],
+            ["E-4", "E-2"],
+            ["E-4", "E-1"]
+          ],
+          "pvalue": 0.01
+        },
+        "filter": {
+          "rank": [["E-1", "E-3"], "E-2", "E-4"],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-3", "E-2"],
+            ["E-3", "E-4"]
+          ],
+          "pvalue": 0.01
+        },
+        "determine-range": {
+          "rank": ["E-2", "E-4", "E-1", "E-3"],
+          "significance": [
+            ["E-2", "E-4"],
+            ["E-2", "E-1"],
+            ["E-2", "E-3"],
+            ["E-4", "E-3"],
+            ["E-1", "E-3"]
+          ],
+          "pvalue": 0.01
+        }
+      },
+      "time": {
+        "find-extremum": {
+          "rank": [["E-3", "E-4"], "E-2", "E-1"],
+          "significance": [
+            ["E-3", "E-2"],
+            ["E-3", "E-1"],
+            ["E-4", "E-2"],
+            ["E-4", "E-1"],
+            ["E-2", "E-1"]
+          ],
+          "pvalue": 0.01
+        },
+        "filter": {
+          "rank": [["E-1", "E-2", "E-3"], "E-4"],
+          "significance": []
+        },
+        "determine-range": {
+          "rank": ["E-3", ["E-1", "E-2", "E-4"]],
+          "significance": []
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

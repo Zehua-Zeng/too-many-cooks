@@ -1,0 +1,155 @@
+{
+  "Title": "The Perceptual Proxies of Visual Comparison",
+  "Authors": "Nicole Jardine, Brian D. Ondov, Niklas Elmqvist",
+  "Link": "https://ieeexplore.ieee.org/document/8807320",
+  "Category": "Hybrid",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "y": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "row": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "y": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "col": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unqiue": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "row": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "n2",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["aggregate", "determine-range"],
+  "Results": {
+    "Experimental": {
+      "JND": {
+        "aggregate": {
+          "rank": ["E-1", "E-3", "E-2", "E-4"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-3", "E-4"],
+            ["E-2", "E-4"]
+          ],
+          "pvalue": 0.05
+        },
+        "determine-range": {
+          "rank": ["E-1", "E-3", "E-2", "E-4"],
+          "significance": []
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

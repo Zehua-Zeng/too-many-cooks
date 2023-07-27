@@ -1,0 +1,365 @@
+{
+  "Title": "Perception of Average Value in Multiclass Scatterplots",
+  "Category": "Experiment",
+  "Authors": "Michael Gleicher, Michael Correll, Christine Nothelfer, Steven Franconeri",
+  "Link": "https://ieeexplore.ieee.org/document/6634120",
+  "Designs": {
+    "E-1": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "num_rows": 75,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 75
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 75,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 3,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-8": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 3,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-9": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-10": {
+      "num_rows": 50,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 50
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 50,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["aggregate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "aggregate-1": {
+          "rank": [
+            ["E-1", "E-2", "E-3", "E-4", "E-5", "E-6", "E-7", "E-8", "E-9"],
+            ["E-10", "E-11"]
+          ],
+          "significance": [
+            ["E-1", "E-10"],
+            ["E-1", "E-11"],
+            ["E-2", "E-10"],
+            ["E-2", "E-11"],
+            ["E-3", "E-10"],
+            ["E-3", "E-11"],
+            ["E-4", "E-10"],
+            ["E-4", "E-11"],
+            ["E-5", "E-10"],
+            ["E-5", "E-11"],
+            ["E-6", "E-10"],
+            ["E-6", "E-11"],
+            ["E-7", "E-10"],
+            ["E-7", "E-11"],
+            ["E-8", "E-10"],
+            ["E-8", "E-11"],
+            ["E-9", "E-10"],
+            ["E-9", "E-11"]
+          ],
+          "pvalue": 0.05
+        },
+        "aggregate-2": {
+          "rank": ["E-1", "E-8"],
+          "significance": [["E-1", "E-8"]],
+          "pvalue": 0.03
+        },
+        "aggregate-3": {
+          "rank": ["E-6", "E-1"],
+          "significance": [["E-6", "E-1"]],
+          "pvalue": 0.07
+        },
+        "aggregate-4": {
+          "rank": ["E-10", "E-11"],
+          "significance": [["E-10", "E-11"]],
+          "pvalue": 0.07
+        },
+        "aggregate-5": {
+          "rank": ["E-3", "E-1"],
+          "significance": [["E-3", "E-1"]],
+          "pvalue": 0.09
+        },
+        "aggregate-6": {
+          "rank": ["E-4", "E-8"],
+          "significance": [["E-4", "E-8"]],
+          "pvalue": 0.39
+        },
+        "aggregate-7": {
+          "rank": ["E-1", "E-4"],
+          "significance": [["E-1", "E-4"]],
+          "pvalue": 0.46
+        },
+        "aggregate-8": {
+          "rank": ["E-1", "E-5"],
+          "significance": [["E-1", "E-5"]],
+          "pvalue": 0.55
+        }
+      }
+    }
+  }
+}

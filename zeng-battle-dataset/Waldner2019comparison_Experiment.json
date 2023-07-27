@@ -1,0 +1,133 @@
+{
+  "Title": "Comparison of Radial and Linear charts for Visualizing Daily Patterns",
+  "Category": "Experiment",
+  "Designs": {
+    "E-2": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "unique": 24,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "unique": 24,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["filter", "retrieve-value", "find-extremum", "sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "filter": {
+          "rank": ["E-3", "E-4", "E-2", "E-1"],
+          "significance": []
+        },
+        "retrieve-value": {
+          "rank": ["E-4", "E-3", "E-2", "E-1"],
+          "significance": []
+        },
+        "find-extremum": {
+          "rank": [["E-2", "E-4"], "E-3", "E-1"],
+          "significance": []
+        },
+        "sort": {
+          "rank": ["E-4", "E-2", "E-3", "E-1"],
+          "significance": []
+        }
+      },
+      "time": {
+        "filter": {
+          "rank": ["E-4", "E-3", "E-1", "E-2"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-1"]
+          ]
+        },
+        "retrieve-value": {
+          "rank": ["E-4", "E-3", "E-2", "E-1"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-1"]
+          ]
+        },
+        "find-extremum": {
+          "rank": ["E-4", "E-2", "E-3", "E-1"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-1"]
+          ]
+        },
+        "sort": {
+          "rank": ["E-4", "E-3", "E-1", "E-2"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-1"]
+          ]
+        }
+      },
+      "user-preference": {
+        "overall": {
+          "rank": ["E-4", "E-3", "E-2", "E-1"],
+          "significance": [
+            ["E-4", "E-2"],
+            ["E-3", "E-1"]
+          ]
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

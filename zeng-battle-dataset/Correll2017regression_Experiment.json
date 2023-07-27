@@ -1,0 +1,110 @@
+{
+  "Title": "Regression by Eye: Estimating Trends in Bivariate Visualizations",
+  "Category": "Experiment",
+  "Authors": "Michael Correll, Jeffrey Heer",
+  "Link": "https://dl.acm.org/doi/10.1145/3025453.3025922",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["correlate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "correlate": {
+          "rank": [["E-2", "E-1"], "E-3"],
+          "significance": [
+            ["E-2", "E-3"],
+            ["E-1", "E-3"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

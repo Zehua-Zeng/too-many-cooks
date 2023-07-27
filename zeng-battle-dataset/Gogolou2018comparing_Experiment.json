@@ -1,0 +1,124 @@
+{
+  "Title": "Comparing Similarity Perception in Time Series Visualizations",
+  "Category": "Experiment",
+  "Authors": "Anna Gogolou, Theophanis Tsandilas, Themis Palpanas, Anastasia Bezerianos",
+  "Link": "https://ieeexplore.ieee.org/document/8440826",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Other Designs": {},
+  "Tasks": ["cluster"],
+  "Results": {
+    "Experimental": {
+      "time": {
+        "cluster-1": {
+          "rank": ["E-3", "E-1", "E-2"],
+          "significance": [
+            ["E-3", "E-1"],
+            ["E-3", "E-2"]
+          ],
+          "pvalue": 0.05
+        },
+        "cluster-2": {
+          "rank": [["E-1, E-3"], "E-2"],
+          "significance": [
+            ["E-1", "E-2"],
+            ["E-3", "E-2"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theory": {}
+  }
+}

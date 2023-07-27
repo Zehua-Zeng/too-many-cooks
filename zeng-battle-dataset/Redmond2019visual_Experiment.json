@@ -1,0 +1,99 @@
+{
+  "Title": "Visual cues in estimation of part-to-whole comparison",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["characterize-distribution"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "characterize-distribution-1": {
+          "rank": ["E-2", "E-1"],
+          "significance": [["E-2", "E-1"]]
+        },
+        "characterize-distribution-2": {
+          "rank": ["E-4", "E-3", "E-1"],
+          "significance": [
+            ["E-4", "E-3"],
+            ["E-4", "E-1"]
+          ]
+        },
+        "characterize-distribution-3": {
+          "rank": ["E-5", "E-1"],
+          "significance": []
+        },
+        "characterize-distribution-4": {
+          "rank": ["E-6", "E-4", "E-1"],
+          "significance": [
+            ["E-6", "E-4"],
+            ["E-6", "E-1"],
+            ["E-4", "E-1"]
+          ]
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

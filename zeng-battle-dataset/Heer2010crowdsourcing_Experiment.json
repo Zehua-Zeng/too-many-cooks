@@ -1,0 +1,293 @@
+{
+  "Title": "Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design",
+  "Category": "Experiment",
+  "Authors": "Jeffrey Heer, Michael Bostock",
+  "Link": "https://dl.acm.org/doi/10.1145/1753326.1753357",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "col": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n2",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string",
+          "unique": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "x": {
+            "field": "n2",
+            "type": "nominal"
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-6": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "field": "q",
+            "scale": {
+              "zero": "true"
+            }
+          },
+          "color": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-7": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "size": {
+            "type": "quantitative",
+            "field": "q"
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-8": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string",
+          "unqiue": 2
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "size": {
+            "type": "quantitative",
+            "field": "q"
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-9": {
+      "fields": [
+        {
+          "name": "n1",
+          "type": "string"
+        },
+        {
+          "name": "n2",
+          "type": "string"
+        },
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "size": {
+            "type": "quantitative",
+            "field": "q"
+          },
+          "x": {
+            "field": "n1",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "n2",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort": {
+          "rank": [
+            "E-1",
+            "E-2",
+            "E-3",
+            "E-4",
+            "E-6",
+            "E-5",
+            "E-8",
+            "E-9",
+            "E-7"
+          ],
+          "significance": [
+            ["E-1", "E-4"],
+            ["E-1", "E-6"],
+            ["E-1", "E-5"],
+            ["E-1", "E-8"],
+            ["E-1", "E-9"],
+            ["E-1", "E-7"],
+            ["E-2", "E-6"],
+            ["E-2", "E-5"],
+            ["E-2", "E-8"],
+            ["E-2", "E-9"],
+            ["E-2", "E-7"],
+            ["E-3", "E-6"],
+            ["E-3", "E-5"],
+            ["E-3", "E-8"],
+            ["E-3", "E-9"],
+            ["E-3", "E-7"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

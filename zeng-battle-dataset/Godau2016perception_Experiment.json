@@ -1,0 +1,75 @@
+{
+  "Title": "Perception of bar graphs - A biased impression?",
+  "Category": "Experiment",
+  "Authors": "Claudia Godau, Tom Vogelgesang, Robert Gaschler",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["aggregate"],
+  "Results": {
+    "Experimental": {
+      "bias": {
+        "aggregate": {
+          "rank": ["E-1", "E-2"],
+          "significance": [["E-1", "E-2"]],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "Title": "Automating the Design of Graphical Presentations of Relational Information",
+  "Category": "Theory",
+  "Designs": {
+    "T-1": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-2": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-3": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-4": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-5": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "size": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-6": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "q1",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "T-7": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "q1",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-8": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-9": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "y": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-10": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-11": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-12": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "size": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-13": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-14": {
+      "fields": [
+        {
+          "name": "t",
+          "type": "datetime",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "t",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-15": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-16": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-17": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-18": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-19": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "size": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-20": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "n",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "T-21": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "T-22": {
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "encoding": {
+          "shape": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort-1": {
+          "rank": [["T-1", "T-2"], "T-3", "T-4", "T-5", "T-6", "T-7"],
+          "significance": [
+            ["T-1", "T-3"],
+            ["T-1", "T-4"],
+            ["T-1", "T-5"],
+            ["T-1", "T-6"],
+            ["T-1", "T-7"],
+            ["T-2", "T-3"],
+            ["T-2", "T-4"],
+            ["T-2", "T-5"],
+            ["T-2", "T-6"],
+            ["T-2", "T-7"],
+            ["T-3", "T-4"],
+            ["T-3", "T-5"],
+            ["T-3", "T-6"],
+            ["T-3", "T-7"],
+            ["T-4", "T-5"],
+            ["T-4", "T-6"],
+            ["T-4", "T-7"],
+            ["T-5", "T-6"],
+            ["T-5", "T-7"],
+            ["T-6", "T-7"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-2": {
+          "rank": [["T-8", "T-9"], "T-13", "T-14", "T-10", "T-11", "T-12"],
+          "significance": [
+            ["T-8", "T-13"],
+            ["T-8", "T-14"],
+            ["T-8", "T-10"],
+            ["T-8", "T-11"],
+            ["T-8", "T-12"],
+            ["T-9", "T-13"],
+            ["T-9", "T-14"],
+            ["T-9", "T-10"],
+            ["T-9", "T-11"],
+            ["T-9", "T-12"],
+            ["T-13", "T-14"],
+            ["T-13", "T-10"],
+            ["T-13", "T-11"],
+            ["T-13", "T-12"],
+            ["T-14", "T-10"],
+            ["T-14", "T-11"],
+            ["T-14", "T-12"],
+            ["T-10", "T-11"],
+            ["T-10", "T-12"],
+            ["T-11", "T-12"]
+          ],
+          "pvalue": 0.05
+        },
+        "sort-3": {
+          "rank": [
+            ["T-15", "T-16"],
+            "T-21",
+            "T-20",
+            "T-22",
+            "T-17",
+            "T-18",
+            "T-19"
+          ],
+          "significance": [
+            ["T-15", "T-21"],
+            ["T-15", "T-20"],
+            ["T-15", "T-22"],
+            ["T-15", "T-17"],
+            ["T-15", "T-18"],
+            ["T-15", "T-19"],
+            ["T-16", "T-21"],
+            ["T-16", "T-20"],
+            ["T-16", "T-22"],
+            ["T-16", "T-17"],
+            ["T-16", "T-18"],
+            ["T-16", "T-19"],
+            ["T-21", "T-20"],
+            ["T-21", "T-22"],
+            ["T-21", "T-17"],
+            ["T-21", "T-18"],
+            ["T-21", "T-19"],
+            ["T-20", "T-22"],
+            ["T-20", "T-17"],
+            ["T-20", "T-18"],
+            ["T-20", "T-19"],
+            ["T-22", "T-17"],
+            ["T-22", "T-18"],
+            ["T-22", "T-19"],
+            ["T-17", "T-18"],
+            ["T-17", "T-19"],
+            ["T-18", "T-19"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

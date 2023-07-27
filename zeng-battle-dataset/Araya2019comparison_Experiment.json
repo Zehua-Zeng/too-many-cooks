@@ -1,0 +1,135 @@
+{
+  "Title": "A Comparison of Visualizations for Identifying Correlation Over Time and Space",
+  "Category": "Experiment",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "q4",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "unique": 4
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "q3",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q4",
+            "type": "quantitative"
+          },
+          "col": {
+            "field": "t",
+            "type": "ordinal"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q1",
+          "type": "number"
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "q3",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "q4",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "t",
+          "type": "datetime",
+          "unique": 4
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "col": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "row": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "q4",
+            "type": "quantitative"
+          },
+          "x": {
+            "field": "t",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "q3",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["correlate"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "correlate": {
+          "rank": ["E-2", "E-1", "E-3"],
+          "significance": []
+        }
+      },
+      "time": {
+        "correlate": {
+          "rank": ["E-2", "E-1", "E-3"],
+          "significance": [
+            ["E-2", "E-3"],
+            ["E-1", "E-3"]
+          ]
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}

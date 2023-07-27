@@ -1,0 +1,174 @@
+{
+  "Title": "Juvenile Graphical Perception: A Comparison between Children and Adults",
+  "Category": "Experiment",
+  "Authors": "Liudas Panavas, Amy Worth, Tarik Crnovrsanin, Tejas Sathyamurthi, Sara Cordes, Michelle A. Borkin, Cody Dunne",
+  "Designs": {
+    "E-1": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "row": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "polar",
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "fields": [
+        {
+          "name": "q",
+          "type": "number",
+          "interesting": "true"
+        },
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 2,
+          "interesting": "true"
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "n",
+            "type": "nominal"
+          },
+          "size": {
+            "field": "q",
+            "type": "quantitative"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["sort"],
+  "Results": {
+    "Experimental": {
+      "accuracy": {
+        "sort-1": {
+          "rank": ["E-1", "E-3", "E-2", ["E-4", "E-5"]],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-2"],
+            ["E-1", "E-4"],
+            ["E-1", "E-5"],
+            ["E-3", "E-2"],
+            ["E-3", "E-4"],
+            ["E-3", "E-5"],
+            ["E-2", "E-4"],
+            ["E-2", "E-5"]
+          ],
+          "pvalue": 0.05
+        }
+      }
+    }
+  }
+}

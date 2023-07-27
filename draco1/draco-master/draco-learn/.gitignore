@@ -1,6 +1,0 @@
-__pycache__/*
-.eggs/*
-.mypy_cache
-.pytest_cache
-dist
-malfoy.egg-info

@@ -1,0 +1,308 @@
+{
+  "Title": "The relation between visualization size, grouping, and user performance",
+  "Category": "Experiment",
+  "Authors": "Connor C. Gramazio, Karen B. Schloss, David H. Laidlaw",
+  "Link": "https://ieeexplore.ieee.org/document/6875989",
+  "Designs": {
+    "E-1": {
+      "num_rows": 36,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 6,
+          "interesting": "true"
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 6
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-2": {
+      "num_rows": 64,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 8,
+          "interesting": "true"
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 8
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-3": {
+      "num_rows": 100,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 10,
+          "interesting": "true"
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 10
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-4": {
+      "num_rows": 144,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 12
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 12
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-5": {
+      "num_rows": 196,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 14
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 14
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "rect",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-6": {
+      "num_rows": 196,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 14
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 14
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    },
+    "E-7": {
+      "num_rows": 484,
+      "fields": [
+        {
+          "name": "n",
+          "type": "string",
+          "unique": 5,
+          "interesting": "true"
+        },
+        {
+          "name": "q1",
+          "type": "number",
+          "unique": 22
+        },
+        {
+          "name": "q2",
+          "type": "number",
+          "unique": 22
+        }
+      ],
+      "design": {
+        "coordinates": "cartesian",
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "q1",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "q2",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "n",
+            "type": "nominal"
+          }
+        }
+      }
+    }
+  },
+  "Tasks": ["find-anomalies"],
+  "Results": {
+    "Experimental": {
+      "time": {
+        "find-anomalies-1": {
+          "rank": ["E-1", "E-2", "E-3", "E-4", "E-5"],
+          "significance": [
+            ["E-1", "E-3"],
+            ["E-1", "E-4"],
+            ["E-1", "E-5"],
+            ["E-2", "E-4"],
+            ["E-2", "E-5"]
+          ],
+          "pvalue": 0.05
+        },
+        "find-anomalies-2": {
+          "rank": ["E-6", "E-7"],
+          "significance": [["E-6", "E-7"]],
+          "pvalue": 0.05
+        }
+      }
+    },
+    "Theoretical": {}
+  }
+}
