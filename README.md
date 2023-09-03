@@ -1,4 +1,4 @@
-# Too Many Cooks: Exploring How Graphical Perception Studies Influence Visualization Recommendations in Draco
+# Too Many Cooks: Exploring How Graphical Perception Studies Influence Visualization Recommendations in Draco (VIS 2023)
 
 ## ArXiv
 
