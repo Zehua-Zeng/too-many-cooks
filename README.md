@@ -1,8 +1,14 @@
 # Too Many Cooks: Exploring How Graphical Perception Studies Influence Visualization Recommendations in Draco
 
-### OSF Link
+## ArXiv
+
+https://arxiv.org/abs/2308.14241
+
+## OSF
 
 https://osf.io/kxd2f/?view_only=ce75083aa2b5455ba18712e345049e54
+
+## Details
 
 ### **zeng-battle-dataset**
 
